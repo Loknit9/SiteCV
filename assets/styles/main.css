@@ -88,7 +88,7 @@ header{
     overflow: hidden;
     top : 7vh;
     margin: 0 10vw;
-    position: absolute;
+    position: relative;
 }
 .page.projets-centre{
     left : 0;
