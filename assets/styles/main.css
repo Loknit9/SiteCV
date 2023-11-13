@@ -1,0 +1,132 @@
+@font-face {
+	font-family: 'DuctusGeometric';
+	src: url('/assets/fonts/DuctusGeometric.woff2'),
+}
+@font-face {
+	font-family: 'Stilu-Light';
+	src: url('/assets/fonts/Stilu-Light.woff2'),
+}
+
+body {
+	font-family: 'Stilu-Light', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100vw;
+    margin:0;
+    background-color: rgb(252, 244, 233);
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    height: 64px;
+    width: 100vw;
+    padding: 0 10vw;
+    position: fixed;
+}
+.menu{
+    position: sticky;
+}
+main{
+    width: 80vw;
+    height: 100vh;
+    padding: 10vh, 5vw;
+    overflow: hidden;
+    top : 64px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cercle {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background: green;
+    margin: 12px;
+}
+
+.page{
+    margin: 0, 10vh;
+}
+
+.page.bio-left1{
+    left: -100vw;
+}
+
+.page.bio-left2{
+    left: -100vw;
+    top : 100vh;
+    overflow: auto;
+}
+.page.web-right1{
+    left: 100vw;
+}
+.page.web-right2{
+    left: 100vw;
+    top : 100vh;
+    overflow: auto;
+}
+
+.page.accueil-centre{
+    left: 0;
+}
+.page.projets-centre{
+    left : 0;
+    top : 100vh;
+    overflow: auto;
+}
+
+.move{
+    transition: transform 1s linear;
+}
+
+footer{
+    min-height: 10px;
+    position: absolute;
+    width: 6vw;
+    bottom: -100px;
+    display: flex;
+    align-items: flex-end;
+}
+
+ul{
+    list-style: none;
+}
+
+.logo{
+    min-height: 10px;
+}
+
+.cv{
+    width: 100vw/20;
+    height: 100vh/20;
+    border-radius: 51%;
+    background: green;
+    margin: 2%;
+}
+
+.text-cv{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* accueil nom titre */
+.nom{
+    color: green;
+}
+
+h1{
+    font-family: 'DuctusGeometric';
+}
+/* section bloc page accueil  */
+
+.orange{
+    width: 45vw;
+    height: 40vh;
+    border-radius: 63% 23% 28% 38% / 52% 29% 63% 24%;
+    background-color: rgba(255, 77, 0, 0.816);
+    margin: 0 10% 0 20%;
+}
+
