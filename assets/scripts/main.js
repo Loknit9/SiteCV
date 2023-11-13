@@ -1,7 +1,9 @@
-const center_btn = document.querySelector("footer li:first-child");
-const left_btn = document.querySelector("footer li:nth-child(2)");
-const right_btn = document.querySelector("footer li:nth-child(3)");
-const bottom_btn = document.querySelector("footer li:last-child");
+const center_btn = document.getElementById("home");
+const left_btn = document.getElementById("orange");
+const left_btn2 = document.getElementById("form");
+const right_btn = document.getElementById("rose");
+const right_btn2 = document.getElementById("rouge");
+const bottom_btn = document.getElementById("bleu");
 
 const movable = document.querySelector(".movable");
 
@@ -16,8 +18,18 @@ left_btn.addEventListener("click", function(){
     console.log(movable.style.transform);
 });
 
+left_btn2.addEventListener("click", function(){
+    movable.style.transform="translateX(100vw) translateY(-100vh)";
+    console.log(movable.style.transform);
+});
+
 right_btn.addEventListener("click", function(){
     movable.style.transform="translateX(-100vw)";
+    console.log(movable.style.transform);
+});
+
+right_btn2.addEventListener("click", function(){
+    movable.style.transform="translate(-100vw, -100vh)";
     console.log(movable.style.transform);
 });
 
