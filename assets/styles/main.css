@@ -11,91 +11,107 @@
 	font-family: 'Stilu-SemiBold';
 	src: url('/assets/fonts/Stilu-SemiBold.woff2'),
 }
-html{
-    background-color: white;
-}
+
 body {
 	font-family: 'Stilu-Light';
-    background-color: rgb(252, 244, 233);
 }
 
 html, body{
     width: 100vw;
     margin:0;
+    background-color: rgb(252, 244, 233);
 }
 
 header{
     background-color: rgb(255, 255, 255);
     height: 7vh;
     width: 100vw;
-    position: static;
+    margin: 0;
+    
 }
 .menu{
-    position: sticky;
-    z-index: 10;
     margin: 0 10vw;
+    position: sticky;
 }
 
 .cercle {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
     background: green;
-    margin: 12px;
+    z-index: 100;
 }
 
 .page{
     position: absolute;
-    width: 100vw;
+    width: 80vw;
     height: 93vh;
     border : 1px solid black;
     overflow: hidden;
-}
-
-.page.bio-left1{
-    left: -100vw;
-    top: 7vh
-}
-/* page bio left */
-.page.bio-left2{
-    left: -100vw;
-    top : 100vh;
-    overflow: auto;
-}
-
-/* page web dev */
-.page.web-right1{
-    left: 100vw;
-    top: 7vh;
-}
-
-.col li img{
-    width: 10%;
-}
-
-
-.page.web-right2{
-    left: 100vw;
-    top : 100vh;
-    overflow: auto;
+    margin: 0 10vw;
 }
 
 .page.accueil-centre{
     left: 0;
-    width: 100vw;
+    width: 80vw;
     height: 93vh;
-    /* padding: 10vh, 5vw; */
     overflow: hidden;
-    top : 7vh;
     margin: 0 10vw;
+    padding: 5vh 0;
     position: relative;
 }
-.page.projets-centre{
-    left : 0;
-    top : 100vh;
-    overflow: auto;
+
+/* page bio left */
+.page.bio-left{
+    left: -100vw;
+    top: 7vh;
+    width: 80vw;
 }
-.move{
+
+/* page bio left */
+
+.page.contact-left2{
+    width: 80vw;
+    left: -100vw;
+    top : 100vh;
+}
+
+/* page web dev droite */
+.page.web-right1{
+    width: 80vw;
+    left: 100vw;
+    margin: 0 10vw;
+    top: 8vh;
+}
+
+.col li img{
+    width: 8%;
+}
+
+.col{
+    display: flex;
+    
+}
+
+/* page graphsite droite bas */
+
+.page.graphiste-right2{
+    left: 100vw;
+    top : 101vh;
+    overflow: auto;
+    margin: 10vh 10vw;
+    width: 80vw;
+}
+
+.page.projets-centre{
+    width: 80vw;
+    left : 0;
+    top : 101vh;
+    overflow: auto;
+    margin: 10vh 10vw;
+    padding: 10vh 0;
+}
+.movable{
     transition: transform 1s linear;
 }
 
@@ -103,9 +119,10 @@ header{
 
 footer{
     min-height: 10px;
-    position: absolute;
+    position: relative;
     width: 10vw;
-    bottom: 10vh;
+    bottom: 25vh;
+    left: 80vw;
     display: flex;
     align-items: flex-end;
 }
