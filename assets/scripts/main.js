@@ -8,7 +8,7 @@ const bottom_btn = document.getElementById("bleu");
 const movable = document.querySelector(".movable");
 
 center_btn.addEventListener("click", function(){
-    movable.style.transform="translate=(0, 0)";
+    movable.style.transform="translate=(0vw, 0vh)";
     console.log(movable.style.transform);
 });
 
