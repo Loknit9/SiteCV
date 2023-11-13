@@ -7,8 +7,14 @@
 	src: url('/assets/fonts/Stilu-Light.woff2'),
 }
 
+@font-face {
+	font-family: 'Stilu-SemiBold';
+	src: url('/assets/fonts/Stilu-SemiBold.woff2'),
+}
+
 body {
-	font-family: 'Stilu-Light', sans-serif;
+	font-family: 'Stilu-Light';
+    z-index: 1;
 }
 
 html, body{
@@ -27,6 +33,7 @@ header{
 }
 .menu{
     position: sticky;
+    z-index: 10;
 }
 main{
     width: 80vw;
@@ -81,10 +88,12 @@ main{
     transition: transform 1s linear;
 }
 
+/* footer reseaux sociaux */
+
 footer{
     min-height: 10px;
     position: absolute;
-    width: 6vw;
+    width: 10vw;
     bottom: -100px;
     display: flex;
     align-items: flex-end;
@@ -96,37 +105,59 @@ ul{
 
 .logo{
     min-height: 10px;
+    max-width: 3vw;
+    align-items: center;
 }
 
 .cv{
-    width: 100vw/20;
-    height: 100vh/20;
-    border-radius: 51%;
-    background: green;
-    margin: 2%;
+    text-decoration: none;
 }
 
 .text-cv{
     text-decoration: none;
-    font-weight: bold;
-    text-align: center;
+    font-family: "Stilu-SemiBold";
+    font-size: 120%;
+    color: black;
+    margin-top: 2%;
 }
 
 /* accueil nom titre */
 .nom{
     color: green;
+    width: fit-content;
+    z-index: 1;
 }
 
 h1{
     font-family: 'DuctusGeometric';
+    font-size:170% ;
+    margin: 0% 0 0 0;
+}
+
+h4{
+    font-size: 110%;
+    margin: 2% 0 0.75% 0 ;
 }
 /* section bloc page accueil  */
 
 .orange{
-    width: 45vw;
+    width: 30vw;
     height: 40vh;
     border-radius: 63% 23% 28% 38% / 52% 29% 63% 24%;
     background-color: rgba(255, 77, 0, 0.816);
     margin: 0 10% 0 20%;
+    transform: translate(6vw, 7vh);
+}
+
+.text-orange{
+    transform: translate(6vw, 7vh) rotate(335deg);
+    color: white;
+    width: fit-content;
+}
+
+.blocs{
+    z-index: 2;
+    position: absolute;
+    top: 40px; left: 40px;
 }
 
