@@ -12,14 +12,13 @@ center_btn.addEventListener("click", function(){
     console.log(movable.style.transform);
 });
 
-
 left_btn.addEventListener("click", function(){
     movable.style.transform="translateX(100vw)";
     console.log(movable.style.transform);
 });
 
 left_btn2.addEventListener("click", function(){
-    movable.style.transform="translateX(100vw) translateY(-100vh)";
+    movable.style.transform="translate(100vw, -100vh)";
     console.log(movable.style.transform);
 });
 

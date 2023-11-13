@@ -11,29 +11,29 @@
 	font-family: 'Stilu-SemiBold';
 	src: url('/assets/fonts/Stilu-SemiBold.woff2'),
 }
-
+html{
+    background-color: white;
+}
 body {
 	font-family: 'Stilu-Light';
-    z-index: 1;
+    background-color: rgb(252, 244, 233);
 }
 
 html, body{
-    height: 100%;
     width: 100vw;
     margin:0;
-    background-color: rgb(252, 244, 233);
 }
 
 header{
     background-color: rgb(255, 255, 255);
-    height: 64px;
+    height: 7vh;
     width: 100vw;
-    padding: 0 10vw;
-    position: fixed;
+    position: static;
 }
 .menu{
     position: sticky;
     z-index: 10;
+    margin: 0 10vw;
 }
 
 .cercle {
@@ -47,13 +47,14 @@ header{
 .page{
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 93vh;
     border : 1px solid black;
     overflow: hidden;
 }
 
 .page.bio-left1{
-    left: -110vw;
+    left: -100vw;
+    top: 7vh
 }
 /* page bio left */
 .page.bio-left2{
@@ -64,7 +65,8 @@ header{
 
 /* page web dev */
 .page.web-right1{
-    left: 110vw;
+    left: 100vw;
+    top: 7vh;
 }
 
 .col li img{
@@ -73,7 +75,7 @@ header{
 
 
 .page.web-right2{
-    left: 110vw;
+    left: 100vw;
     top : 100vh;
     overflow: auto;
 }
@@ -81,12 +83,12 @@ header{
 .page.accueil-centre{
     left: 0;
     width: 100vw;
-    height: 100vh;
-    padding: 10vh, 5vw;
+    height: 93vh;
+    /* padding: 10vh, 5vw; */
     overflow: hidden;
-    top : 64px;
+    top : 7vh;
     margin: 0 10vw;
-    position: relative;
+    position: absolute;
 }
 .page.projets-centre{
     left : 0;
@@ -103,7 +105,7 @@ footer{
     min-height: 10px;
     position: absolute;
     width: 10vw;
-    bottom: -100px;
+    bottom: 10vh;
     display: flex;
     align-items: flex-end;
 }
