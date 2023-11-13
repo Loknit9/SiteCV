@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developpeuse</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+        </nav>
+    </header>
+    <main class="move">
+        <!-- page d'accueil // centre -->
+        <div class="accueil">
+            <div class="nom">
+                <h4>Laurence Delforhe</h4>
+            </div>
+            <div class="titre">
+                <h1>web développeuse</h1>
+                <h1>graphiste</h1>
+                <h1>...</h1>
+            </div>
+            <section class="blocs">
+                <div class="orange">
+                    <h1>bio</h1>
+                </div>
+                <div class="bleu">
+                    <h1>portfolio</h1>
+                </div>
+                <div class="rose">
+                    <h1>web</h1>
+                </div>
+                <div class="graphiste">
+                    <h1>graphiste</h1>
+                </div>
+            </section>
+
+            <!-- à droite de la page // réseaux sociaux, contact, cv pdf  -->
+            <section class="footer">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Loknit9/" title="git">
+                            <img alt="logo github" src="/assets/img/rs/github.svg" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/laurence-delforge/" title="link">
+                            <img alt="logo linkedin" src="/assets/img/rs/linkedin-in.svg" />
+                        </a>
+                    </li>
+                    <li>
+                        <!-- js pour transiter sur cette page -->
+                        <a href="" title="contact">
+                            <img alt="enveloppe" src="/assets/img/rs/envelope-solid.svg" />
+                        </a>
+                    </li>
+                    <li>
+                        <!-- pdf -->
+                        <a href="" title="cv">
+                            <img alt="pdf cv" src="/assets/img/rs/caret-down-solid.svg" />
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- page web developpeuse // droite 1-->
+
+        <div class="web">
+            <div class="rose">
+                <h1>web développeuse full stack</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium, temporibus voluptate nobis
+                    distinctio ipsa recusandae nam itaque saepe autem, dolorem natus atque cumque ratione quas optio ea
+                    fugiat minus debitis excepturi totam. Quis, in aliquid perspiciatis sequi nihil, explicabo dolorum,
+                    quos obcaecati error asperiores atque suscipit. Nesciunt numquam earum dolorem!
+                </p>
+                <ul class="col1">
+                    <li><img src="assets/img/web/php.svg" alt=""></li>
+                    <li><img src="assets/img/web/csharp-svgrepo-com.svg" alt=""></li>
+                    <li><img src="assets/img/web/html5.svg" alt=""></li>
+                    <li><img src="assets/img/web/square-js.svg" alt=""></li>
+                    <li><img src="assets/img/web/dbs-mysql-svgrepo-com.svg" alt=""></li>
+                </ul>
+                <ul class="col2">
+                    <li><img src="assets/img/web/symfony.svg" alt=""></li>
+                    <li><img src="assets/img/web/aspnet-svgrepo-com.svg" alt=""></li>
+                    <li><img src="assets/img/web/css3-alt.svg" alt=""></li>
+                    <li><img src="assets/img/web/nodejs01-svgrepo-com.svg" alt=""></li>
+                    <li><img src="assets/img/web/python.svg" alt=""></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- page graphiste // droite 2 -->
+        <div class="graphiste">
+            <div class="rouge">
+                <h1>graphiste</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae id adipisci repellendus
+                    accusantium at dolor?
+                </p>
+                <ul class="design">
+                    <li><img src="assets/img/design/indesign-svgrepo-com.svg" alt=""></li>
+                    <li><img src="assets/img/design/photoshop-svgrepo-com.svg" alt=""></li>
+                    <li><img src="assets/img/design/illustrator-svgrepo-com.svg"></li>
+                </ul>
+
+
+            </div>
+
+        </div>
+        <!-- page bio // gauche 1 -->
+        <div class="bio">
+            <div class="orange">
+                <div class="pro">
+                    <h4>parcours pro</h4>
+                    <h2>graphiste</h2>
+                    <p>free-lance</p>
+                    <p>sunny side up - Bruxelles</p>
+                    <p>Propaganda - Bruxelles</p>
+                    <p>happy publishing - Bruxelles</p>
+                </div>
+                <div class="wbw">
+                    <h2>co-créatrice</h2>
+                    <p>woolbabywool.be</p>
+                </div>
+                <div class="seri">
+                    <h2>sérigraphe</h2>
+                    <p>free lance</p>
+                </div>
+                <div class="formations">
+                    <h4>formations</h4>
+                    <h2>web developpeuse - interface3 - Bruxelles</h2>
+                    <p>habillement - Bruxelles</p>
+                    <p>bonneterie - Liège</p>
+                    <p>néerlandais - CVO - Jette</p>
+                    <p>sérigraphie - erg - Bruxelles</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- page contact // gauche 2 -->
+        <div class="contact">
+            <div class="form">
+                <form action="" method="post">
+                    <input type="text" id="fprenom" name="fprenom" placeholder="Polly"><br>
+                    <input type="text" id="fnom" name="fnom" placeholder="Harvey"><br>
+                    <input type="email" id="femail" name="femail" placeholder="polly@gmail.com"><br>
+                    <input type="text" id="fmessage" name="fmessage" placeholder="Bonjour, ..."><br>
+                    <input type="radio" id="robot" name="frobot" value="Je ne suis pas un robot">
+                    <input type="text" id="fname" value="John"><br><br>
+                    <input type="submit" value="envoyer">
+                </form>
+            </div>
+            <div class="stage">
+                <h2>stage</h2>
+                <p>cherche entreprise pour
+                    m'accueillir en stage
+                    web developpeuse
+                    du 21/04/2024
+                    au 21/06/2024</p>
+            </div>
+        </div>
+
+
+        <!-- page portfolio suite accueil centre -->
+        <div class="clés">
+            <!-- mots clés -->
+            <p>graphisme web back-end front-end css html javascript php adobe xd indesign c# .aspnet </p>
+            <p>graphisme back-end front-end css html javascript php adobe xd indesign c# .aspnet </p>
+        </div>
+        
+        <!-- projets -->
+        <div class="projets">
+            <div class="card">
+                <img src="" alt="Salut Coach!" style="width:100%">
+                <div class="container">
+                    <h4><b>Salut Coach!</b></h4>
+                    <p>application web php</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="" alt="CodeCanvas" style="width:100%">
+                <div class="container">
+                    <h4><b>CodeCanvas</b></h4>
+                    <p>hackathon site web html css javascript php </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="" alt="www.mariedoutrepont.be" style="width:100%">
+                <div class="container">
+                    <h4><b>mariedoutrepont.be</b></h4>
+                    <p>site wordpress</p>
+                </div>
+
+                <div class="card">
+                    <img src="" alt="www.blondybrownie.com" style="width:100%">
+                    <div class="container">
+                        <h4><b>blondybrownie.com</b></h4>
+                        <p>site wordpress</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="" alt="www.woolbabywool.be" style="width:100%">
+                    <div class="container">
+                        <h4><b>woolbabywool.be</b></h4>
+                        <p>site wordpress</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
