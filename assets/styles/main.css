@@ -48,17 +48,20 @@ header{
 .page{
     position: absolute;
     width: 80vw;
-    height: 93vh;
+    height: 82vh;
     border : 1px solid black;
     /* overflow: hidden; */
     margin: 0 10vw;
+    padding: 5vh 0;
+
 }
 
+ /* page d'accueil // centre  */
 .page.accueil-centre{
     left: 0;
     top:7vh;
     width: 80vw;
-    height: 83vh;
+    height: 82vh;
     overflow: hidden;
     margin: 0 10vw;
     padding: 5vh 0;
@@ -70,15 +73,18 @@ header{
     left: -100vw;
     top: 7vh;
     width: 80vw;
+    height: 83vh;
 
 }
 
-/* page bio left */
+/* page contact left bas*/
 
 .page.contact-left2{
     width: 80vw;
     left: -100vw;
-    top : 100vh;
+    top : 107vh;
+    height: 82vh;
+    padding: 5vh 0;
 
 }
 
@@ -87,7 +93,9 @@ header{
     width: 80vw;
     left: 100vw;
     margin: 0 10vw;
-    top: 8vh;
+    top: 7vh;
+    height: 82vh;
+    padding: 5vh 0;
 }
 
 .col li img{
@@ -99,22 +107,26 @@ header{
     
 }
 
-/* page graphsite droite bas */
+/* page graphiste droite bas */
 
 .page.graphiste-right2{
     left: 100vw;
-    top : 101vh;
-    margin: 10vh 10vw;
+    top : 107vh;
+    margin: 0vh 10vw;
     width: 80vw;
+    height: 82vh;
+    padding: 5vh 0;
 }
 
+/* page projet centre bas */
 .page.projets-centre{
     width: 80vw;
     left : 0;
-    top : 101vh;
+    top : 107vh;
     overflow: auto;
-    margin: 10vh 10vw;
-    padding: 10vh 0;
+    margin: 0 10vw;
+    padding: 5vh 0;
+    height: 82vh;
 }
 .movable{
     transition: transform 1s linear;
@@ -126,8 +138,8 @@ footer{
     min-height: 10px;
     position: relative;
     width: 10vw;
-    bottom: 25vh;
-    left: 80vw;
+    bottom: 55vh;
+    left: 83vw;
     display: flex;
     align-items: flex-end;
 }
@@ -163,27 +175,76 @@ ul{
 
 h1{
     font-family: 'DuctusGeometric';
-    font-size:170% ;
+    font-size:190% ;
     margin: 0% 0 0 0;
 }
 
 h4{
-    font-size: 110%;
+    font-size: 125%;
     margin: 2% 0 0.75% 0 ;
 }
 /* section bloc page accueil  */
-
 #orange{
-    width: 30vw;
-    height: 40vh;
+    width: 29vw;
+    height: 20vw;
     border-radius: 63% 23% 28% 38% / 52% 29% 63% 24%;
     background-color: rgba(255, 77, 0, 0.816);
     margin: 0 10% 0 20%;
-    transform: translate(6vw, 7vh);
+    transform: translate(6vw, 7vw);
 }
 
 .text-orange{
-    transform: translate(6vw, 7vh) rotate(335deg);
+    transform: translate(6vw, 4vw) rotate(335deg);
+    color: white;
+    width: fit-content;
+}
+
+#bleu{
+    width: 27vw;
+    height: 20vw;
+    border-radius: 48% 52% 70% 30% / 69% 54% 46% 31% ;
+    background-color: rgba(65, 105, 225, 0.816);
+    /* transform: translate(6vw, 7vh); */
+    z-index: 2;
+}
+
+.text-bleu{
+    transform: translate(0vw, 7vw) rotate(300deg);
+    color: white;
+    width: fit-content;
+}
+
+#rose{
+    width:35vw;
+    height: 30vw;
+    border-radius: 65% 35% 40% 60% / 31% 79% 21% 69%;
+    background-color: rgba(255,105,180, 0.816);
+    transform: translate(30vw, -35vw);
+    z-index: 2;
+}
+
+.text-rose{
+    transform: translate(21vw, 0.7vw) rotate(12deg);
+    color: white;
+    width: fit-content;
+}
+.text-rose2{
+    transform: translate(25.6vw, 0.6vw) rotate(50deg);
+    color: white;
+    width: fit-content;
+}
+
+#rouge{
+    width:25vw;
+    height: 18vw;
+    border-radius: 13% 87% 57% 43% / 49% 57% 43% 51%  ;
+    background-color: rgba(255,39,7,0.85);
+    transform: translate(21vw, -47vw);
+    z-index: 2;
+}
+
+.text-rouge{
+    transform: translate(12vw, 4vw) rotate(32deg);
     color: white;
     width: fit-content;
 }
