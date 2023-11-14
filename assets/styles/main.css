@@ -137,23 +137,13 @@ header{
 /* footer reseaux sociaux */
 
 footer{
-    min-height: 10px;
     position: relative;
-    width: 10vw;
     bottom: 55vh;
     left: 83vw;
-    display: flex;
-    align-items: flex-end;
 }
 
 ul{
     list-style: none;
-}
-
-.logo{
-    min-height: 10px;
-    max-width: 3vw;
-    align-items: center;
 }
 
 .cv{
@@ -161,11 +151,27 @@ ul{
 }
 
 .text-cv{
-    text-decoration: none;
     font-family: "Stilu-SemiBold";
     font-size: 120%;
-    color: black;
+    color: green;
     margin-top: 2%;
+}
+
+.vert{
+    background-color: green;
+    min-height: 5vw;
+    max-width: 3vw;
+}
+.git{
+    mask: url("../img/rs/github.svg") no-repeat center;
+}
+
+.in{
+    mask: url("../img/rs/linkedin-in.svg") no-repeat center;
+}
+
+.enveloppe{
+    mask: url("../img/rs/envelope-solid.svg") no-repeat center;
 }
 
 /* accueil nom titre */
