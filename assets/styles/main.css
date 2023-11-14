@@ -24,7 +24,7 @@ html, body{
 
 header{
     background-color: rgb(255, 255, 255);
-    height: 7vh;
+    height: 90px;
     width: 100vw;
     margin: 0;
     position: absolute;
@@ -37,10 +37,11 @@ header{
 }
 
 .cercle {
+    top:0.7vw;
     width: 60px;
     height: 60px;
     border-radius: 30px;
-    background: green;
+    background: rgba(0, 186, 0, 1);
     z-index: 100;
     position: relative;
 }
@@ -49,7 +50,7 @@ header{
     position: absolute;
     width: 80vw;
     height: 82vh;
-    border : 1px solid black;
+    /* border : 1px solid black; */
     /* overflow: hidden; */
     margin: 0 10vw;
     padding: 5vh 0;
@@ -70,19 +71,19 @@ header{
 
 /* accueil nom titre */
 .nom{
-    color: green;
+    color: rgba(0, 186, 0, 1);
     width: fit-content;
     z-index: 1;
 }
 
 h1{
     font-family: 'DuctusGeometric';
-    font-size:190% ;
-    margin: 0% 0 0 0;
+    font-size:280% ;
+    margin: 0 ;
 }
 
 h4{
-    font-size: 125%;
+    font-size: 180%;
     margin: 2% 0 0.75% 0 ;
 }
 
@@ -232,6 +233,8 @@ h4{
     height: 82vh;
     padding: 5vh 0;
     color: white;
+    overflow: hidden;
+
 }
 
 .text_graphiste{
@@ -272,6 +275,8 @@ h4{
     top: 7vh;
     width: 80vw;
     height: 83vh;
+    overflow: hidden;
+
 
 }
 
@@ -315,15 +320,8 @@ ul{
     text-decoration: none;
 }
 
-.text-cv{
-    font-family: "Stilu-SemiBold";
-    font-size: 120%;
-    color: green;
-    margin-top: 2%;
-}
-
 .vert{
-    background-color: green;
+    background-color: rgba(0, 186, 0, 1);
     min-height: 3vw;
     max-width: 2vw;
 }
