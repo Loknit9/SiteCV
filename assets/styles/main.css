@@ -27,7 +27,9 @@ header{
     height: 7vh;
     width: 100vw;
     margin: 0;
-    
+    position: absolute;
+    top:0;
+    left:0;
 }
 .menu{
     margin: 0 10vw;
@@ -54,8 +56,9 @@ header{
 
 .page.accueil-centre{
     left: 0;
+    top:7vh;
     width: 80vw;
-    height: 93vh;
+    height: 83vh;
     overflow: hidden;
     margin: 0 10vw;
     padding: 5vh 0;
