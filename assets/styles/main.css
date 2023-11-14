@@ -68,51 +68,6 @@ header{
     position: relative;
 }
 
-/* page bio left */
-.page.bio-left{
-    left: -100vw;
-    top: 7vh;
-    width: 80vw;
-    height: 83vh;
-
-}
-
-/* page contact left bas*/
-
-.page.contact-left2{
-    width: 80vw;
-    left: -100vw;
-    top : 107vh;
-    height: 82vh;
-    padding: 5vh 0;
-}
-
-/* page graphiste droite bas */
-
-.page.graphiste-right2{
-    left: 100vw;
-    top : 107vh;
-    margin: 0vh 10vw;
-    width: 80vw;
-    height: 82vh;
-    padding: 5vh 0;
-}
-
-/* page projet centre bas */
-.page.projets-centre{
-    width: 80vw;
-    left : 0;
-    top : 107vh;
-    overflow: auto;
-    margin: 0 10vw;
-    padding: 5vh 0;
-    height: 82vh;
-}
-.movable{
-    transition: transform 1s linear;
-}
-
-
 /* accueil nom titre */
 .nom{
     color: green;
@@ -215,7 +170,7 @@ h4{
 
 @keyframes floating {
     0% { transform: translate(0vw, 0vw); }
-    50%  { transform: translate(0vw, 0.5vw); }
+    50%  { transform: translate(0vw, 1vw); }
     100%   { transform: translate(0vw, 0vw); }    
 }
 
@@ -259,11 +214,89 @@ h4{
     position: relative;
     top: -8vw; left: 48vw;
     z-index: 6;
+    
 }
 
 .col{
     display: flex;
     flex-direction: column;
+}
+
+/* page graphiste droite bas */
+
+.page.graphiste-right2{
+    left: 100vw;
+    top : 107vh;
+    margin: 0vh 10vw;
+    width: 80vw;
+    height: 82vh;
+    padding: 5vh 0;
+    color: white;
+}
+
+.text_graphiste{
+    position: relative;
+    z-index: 5;
+    top: 4vw; left: 9vw;
+}
+.text_graphiste p{
+    width: 25vw;
+}
+
+.design{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 0vw; left: 48vw;
+    z-index: 6;
+}
+
+.design img{
+    width: 6vw;
+}
+
+.rouge_form{
+    width: 62vw;
+    height: 42vw;
+    border-radius: 68% 45% 24% 62% / 33% 45% 66% 59% ;
+    background-color: rgba(255,39,7,0.85);
+    top: 2vw; left: 5vw;      
+    position: absolute;
+}
+
+
+/* page bio left */
+.page.bio-left{
+    left: -100vw;
+    top: 7vh;
+    width: 80vw;
+    height: 83vh;
+
+}
+
+/* page contact left bas*/
+
+.page.contact-left2{
+    width: 80vw;
+    left: -100vw;
+    top : 107vh;
+    height: 82vh;
+    padding: 5vh 0;
+}
+
+/* page projet centre bas */
+.page.projets-centre{
+    width: 80vw;
+    left : 0;
+    top : 107vh;
+    overflow: auto;
+    margin: 0 10vw;
+    padding: 5vh 0;
+    height: 82vh;
+}
+.movable{
+    transition: transform 1s linear;
 }
 
 /* footer reseaux sociaux */
@@ -329,6 +362,10 @@ ul{
 
 .enveloppe{
     mask: url("../img/rs/envelope-solid.svg") no-repeat center;
+}
+
+.cv{
+    mask: url("../img/rs/note-sticky-solid.svg") no-repeat center;
 }
 
 
