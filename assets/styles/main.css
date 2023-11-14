@@ -98,11 +98,14 @@ header{
     padding: 5vh 0;
 }
 
-.col li img{
-    width: 8%;
+.col img{
+    width: 3%;
 }
-.col .droite{
-    float: right;
+.logos_web{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
