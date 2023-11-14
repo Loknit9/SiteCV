@@ -101,11 +101,10 @@ header{
 .col li img{
     width: 8%;
 }
-
-.col{
-    display: flex;
-    
+.col .droite{
+    float: right;
 }
+
 
 /* page graphiste droite bas */
 
@@ -194,7 +193,7 @@ h4{
 }
 
 .text-orange{
-    transform: translate(6vw, 4vw) rotate(335deg);
+    transform: translate(5vw, 3.5vw) rotate(335deg);
     color: white;
     width: fit-content;
 }
@@ -209,7 +208,7 @@ h4{
 }
 
 .text-bleu{
-    transform: translate(0vw, 7vw) rotate(300deg);
+    transform: translate(-0.5vw, 6vw) rotate(300deg);
     color: white;
     width: fit-content;
 }
@@ -254,6 +253,23 @@ h4{
     position: absolute;
     top: 40px; left: 40px;
 }
+
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes floating {
+    0% { transform: translate(0vw, 0vw); }
+    50%  { transform: translate(0vw, 0.5vw); }
+    100%   { transform: translate(0vw, 0vw); }    
+}
+
+
 
 
 
