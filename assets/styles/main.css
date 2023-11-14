@@ -85,29 +85,7 @@ header{
     top : 107vh;
     height: 82vh;
     padding: 5vh 0;
-
 }
-
-/* page web dev droite */
-.page.web-right1{
-    width: 80vw;
-    left: 100vw;
-    margin: 0 10vw;
-    top: 7vh;
-    height: 82vh;
-    padding: 5vh 0;
-}
-
-.col img{
-    width: 3%;
-}
-.logos_web{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
 
 /* page graphiste droite bas */
 
@@ -134,45 +112,6 @@ header{
     transition: transform 1s linear;
 }
 
-/* footer reseaux sociaux */
-
-footer{
-    position: relative;
-    bottom: 55vh;
-    left: 83vw;
-}
-
-ul{
-    list-style: none;
-}
-
-.cv{
-    text-decoration: none;
-}
-
-.text-cv{
-    font-family: "Stilu-SemiBold";
-    font-size: 120%;
-    color: green;
-    margin-top: 2%;
-}
-
-.vert{
-    background-color: green;
-    min-height: 5vw;
-    max-width: 3vw;
-}
-.git{
-    mask: url("../img/rs/github.svg") no-repeat center;
-}
-
-.in{
-    mask: url("../img/rs/linkedin-in.svg") no-repeat center;
-}
-
-.enveloppe{
-    mask: url("../img/rs/envelope-solid.svg") no-repeat center;
-}
 
 /* accueil nom titre */
 .nom{
@@ -191,8 +130,10 @@ h4{
     font-size: 125%;
     margin: 2% 0 0.75% 0 ;
 }
+
+
 /* section bloc page accueil  */
-#orange{
+#orange_bio{
     width: 29vw;
     height: 20vw;
     border-radius: 63% 23% 28% 38% / 52% 29% 63% 24%;
@@ -207,7 +148,7 @@ h4{
     width: fit-content;
 }
 
-#bleu{
+#bleu_projet{
     width: 27vw;
     height: 20vw;
     border-radius: 48% 52% 70% 30% / 69% 54% 46% 31% ;
@@ -222,11 +163,11 @@ h4{
     width: fit-content;
 }
 
-#rose{
+#rose_web{
     width:35vw;
     height: 30vw;
     border-radius: 65% 35% 40% 60% / 31% 79% 21% 69%;
-    background-color: rgba(255,105,180, 0.816);
+    background-color: rgba(235,122,221,0.87);
     transform: translate(30vw, -35vw);
     z-index: 2;
 }
@@ -242,7 +183,7 @@ h4{
     width: fit-content;
 }
 
-#rouge{
+#rouge_grafic{
     width:25vw;
     height: 18vw;
     border-radius: 13% 87% 57% 43% / 49% 57% 43% 51%  ;
@@ -278,7 +219,116 @@ h4{
     100%   { transform: translate(0vw, 0vw); }    
 }
 
+/* page web dev droite */
 
+.page.web-right1{
+    width: 80vw;
+    left: 100vw;
+    margin: 0 10vw;
+    top: 7vh;
+    height: 82vh;
+    padding: 5vh 0;
+    overflow: hidden;
+    color: white;
+}
 
+.rose_form{
+    width: 62vw;
+    height: 42vw;
+    border-radius: 68% 24% 24% 62% / 33% 38% 50% 59% ;
+    background-color: rgba(235,122,221,0.87);
+    top: -6vw; left: 5vw;      
+    position: absolute;
+}
+
+.text_web{
+    position: relative;
+    z-index: 5;
+    top: 4vw; left: 9vw;
+}
+.text_web p{
+    width: 25vw;
+}
+
+.logos_web{
+    display: grid;
+    width: 8vw;
+    grid-template-columns: 4vw 4vw;
+    align-items: start;
+    gap: 12vw 3vw;
+    position: relative;
+    top: -8vw; left: 48vw;
+    z-index: 6;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+/* footer reseaux sociaux */
+
+footer{
+    position: relative;
+    bottom: 55vh;
+    left: 83vw;
+}
+
+ul{
+    list-style: none;
+}
+
+.cv{
+    text-decoration: none;
+}
+
+.text-cv{
+    font-family: "Stilu-SemiBold";
+    font-size: 120%;
+    color: green;
+    margin-top: 2%;
+}
+
+.vert{
+    background-color: green;
+    min-height: 3vw;
+    max-width: 2vw;
+}
+
+.orange{
+    background-color: rgba(255, 77, 0, 0.816);
+    min-height: 3vw;
+    max-width: 2vw;
+}
+
+.rose{
+    background-color: rgba(235,122,221,0.87);
+    min-height: 3vw;
+    max-width: 2vw;
+}
+
+.rouge{
+    background-color: rgba(255,39,7,0.85);
+    min-height: 3vw;
+    max-width: 2vw;
+}
+
+.bleu{
+    background-color: rgba(65, 105, 225, 0.816);
+    min-height: 3vw;
+    max-width: 2vw;
+}
+
+.git{
+    mask: url("../img/rs/github.svg") no-repeat center;
+}
+
+.in{
+    mask: url("../img/rs/linkedin-in.svg") no-repeat center;
+}
+
+.enveloppe{
+    mask: url("../img/rs/envelope-solid.svg") no-repeat center;
+}
 
 
