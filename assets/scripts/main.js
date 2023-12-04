@@ -7,7 +7,8 @@ const bottom_btn = document.getElementById("bleu_projet");
 
 const movable = document.querySelector(".movable");
 
-
+// navigation vers les autres pages du site
+// changement de couleur des picto git, in, mail et cv lorsqu'on navigue sur les différentes pages
 const htmls_chg_color = document.querySelectorAll('.change_color');
 let colors = ["orange", "rose", "vert", "bleu", "rouge"];
 const remove_colors = function(){

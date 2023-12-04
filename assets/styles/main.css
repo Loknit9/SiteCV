@@ -26,7 +26,7 @@ body {
 
 header {
     background-color: rgb(255, 255, 255);
-    height: 90px;
+    height: 80px;
     width: 100vw;
     margin: 0;
     position: absolute;
@@ -81,12 +81,22 @@ header {
 
 h1 {
     font-family: 'DuctusGeometric';
-    font-size: 280%;
+    /* font-size: 280%; */
+    font-size: calc(1.2rem + 1.5vw);
     margin: 0;
 }
 
+h2 {
+    font-family: 'DuctusGeometric';
+    /* font-size: 280%; */
+    font-size: calc(0.4rem + 1.4vw);
+    margin: 0;
+}
+
+
+
 h4 {
-    font-size: 180%;
+    font-size: calc(0.8rem + 0.7vw);
     margin: 2% 0 0.75% 0;
 }
 
@@ -98,7 +108,7 @@ h4 {
     border-radius: 63% 23% 28% 38% / 52% 29% 63% 24%;
     background-color: rgba(255, 77, 0, 0.816);
     margin: 0 10% 0 20%;
-    transform: translate(6vw, 7vw);
+    transform: translate(6vw, 10vw);
 }
 
 .text-orange {
@@ -112,7 +122,7 @@ h4 {
     height: 20vw;
     border-radius: 48% 52% 70% 30% / 69% 54% 46% 31%;
     background-color: rgba(65, 105, 225, 0.816);
-    /* transform: translate(6vw, 7vh); */
+    transform: translate(2vw, 7vh);
     z-index: 2;
 }
 
@@ -127,7 +137,7 @@ h4 {
     height: 30vw;
     border-radius: 65% 35% 40% 60% / 31% 79% 21% 69%;
     background-color: rgba(235, 122, 221, 0.87);
-    transform: translate(30vw, -35vw);
+    transform: translate(30vw, -30vw);
     z-index: 2;
     animation: blob 8s ease-in-out infinite, float 125s ease-in-out infinite;
 }
@@ -149,7 +159,7 @@ h4 {
     height: 18vw;
     border-radius: 13% 87% 57% 43% / 49% 57% 43% 51%;
     background-color: rgba(255, 39, 7, 0.85);
-    transform: translate(21vw, -47vw);
+    transform: translate(23vw, -42vw);
     z-index: 2;
 }
 
@@ -186,6 +196,89 @@ h4 {
 
     100% {
         transform: translate(0vw, 0vw);
+    }
+}
+
+/* responsive changement pour smartphone */
+@media (max-width: 500px) and (orientation: portrait) {
+
+    header {
+        background-color: rgb(255, 255, 255);
+        height: 50px;
+        width: 100vw;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .page.accueil-centre {
+        left: 0;
+        top: 7vh;
+        width: 80vw;
+        height: 82vh;
+        overflow: hidden;
+        margin: 0 4vw;
+        padding: 1vh 0;
+        position: relative;
+    }
+
+    .cercle {
+        width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    }
+
+    #orange_bio, #bleu_projet, #rose_web #rouge_grafic {
+        margin:0%;
+        height: 10vh;
+    }
+
+    #orange_bio {
+        transform: translate(1vw, 20vw);
+        background-color: rgba(255, 77, 0, 0.816);
+    }
+
+    #bleu_projet {
+        transform: translate(1vw, 15vw);
+    }
+
+    .text-bleu {
+        transform: translate(4vw, 6vw) rotate(0deg);
+        color: white;
+        width: fit-content;
+    }
+
+    #rose_web {
+        transform: translate(1vw, 9vw);        
+    }
+
+    .text-rose {
+        transform: translate(10vw, 12vw) rotate(340deg);
+        color: white;
+        width: fit-content;
+    }
+
+    .text-rose2 {
+        transform: translate(17vw, 5vw) rotate(340deg);
+        color: white;
+        width: fit-content;
+    }
+
+    #rouge_grafic {
+        transform: translate(1vw, 3vw);  
+    }
+
+    .text-rouge {
+        transform: translate(4vw, 5vw) rotate(25deg);
+        color: white;
+        width: fit-content;
+    }
+
+    .reseaux {
+        position: relative;
+        bottom: 60vh;
+        left: 75vw;
     }
 }
 
@@ -345,32 +438,32 @@ ul {
 
 .vert {
     background-color: rgba(0, 186, 0, 1);
-    min-height: 3vw;
-    max-width: 2vw;
+    min-height: 40px;
+    max-width: 30px;
 }
 
 .orange {
     background-color: rgba(255, 77, 0, 0.816);
-    min-height: 3vw;
-    max-width: 2vw;
+    min-height: 40px;
+    max-width: 30px;
 }
 
 .rose {
     background-color: rgba(235, 122, 221, 0.87);
-    min-height: 3vw;
-    max-width: 2vw;
+    min-height: 40px;
+    max-width: 30px;
 }
 
 .rouge {
     background-color: rgba(255, 39, 7, 0.85);
-    min-height: 3vw;
-    max-width: 2vw;
+    min-height: 40px;
+    max-width: 30px;
 }
 
 .bleu {
     background-color: rgba(65, 105, 225, 0.816);
-    min-height: 3vw;
-    max-width: 2vw;
+    min-height: 40px;
+    max-width: 30px;
 }
 
 .git {
@@ -418,10 +511,3 @@ ul {
         border-radius: 65% 60% 35% 50% / 65% 38% 75% 36%;
     }
 }
-
-/* @keyframes float {
-    0% {  transform: rotate(0deg) translateX(0%) translateY(0%); }
-    25% {  transform: rotate(10deg) translateX(35%) translateY(-100%);}
-    50% {  transform: rotate(0deg) translateX(-35%) translateY(100%);}
-    100% {  transform: rotate(0deg) translateX(0%) translateY(0%); }
-} */
