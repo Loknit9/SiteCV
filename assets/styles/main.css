@@ -35,8 +35,9 @@ header {
 }
 
 .menu {
-    margin: 0 10vw;
-    position: sticky;
+    margin: 0 12vw;
+    /* position: sticky; */
+    height: 80px;
 }
 
 .cercle {
@@ -92,8 +93,6 @@ h2 {
     font-size: calc(0.4rem + 1.4vw);
     margin: 0;
 }
-
-
 
 h4 {
     font-size: calc(0.8rem + 0.7vw);
@@ -231,18 +230,17 @@ h4 {
 
     #orange_bio,
     #bleu_projet,
-    #rose_web #rouge_grafic {
-        margin: 0%;
-        height: 10vh;
+    #rose_web, #rouge_grafic {
+        margin-left: -5vw;
     }
 
     #orange_bio {
-        transform: translate(1vw, 20vw);
+        transform: translate(1vw, 35vw);
         background-color: rgba(255, 77, 0, 0.816);
     }
 
     #bleu_projet {
-        transform: translate(1vw, 15vw);
+        transform: translate(1vw, 28vw);
     }
 
     .text-bleu {
@@ -252,7 +250,7 @@ h4 {
     }
 
     #rose_web {
-        transform: translate(1vw, 9vw);
+        transform: translate(1vw, 22vw);
     }
 
     .text-rose {
@@ -268,7 +266,7 @@ h4 {
     }
 
     #rouge_grafic {
-        transform: translate(1vw, 3vw);
+        transform: translate(1vw, 16vw);
     }
 
     .text-rouge {
@@ -280,8 +278,9 @@ h4 {
     .reseaux {
         position: relative;
         bottom: 60vh;
-        left: 75vw;
+        left: 70vw;
     }
+    
 }
 
 /* page web dev droite */
@@ -290,8 +289,8 @@ h4 {
     width: 80vw;
     left: 100vw;
     margin: 0 10vw;
-    top: 7vh;
-    height: 82vh;
+    top: 8.5vh;
+    height: 80vh;
     padding: 5vh 0;
     overflow: hidden;
     color: white;
@@ -343,7 +342,6 @@ h4 {
         justify-self: center;
 }
 
-
 .logo1{
     grid-area: a;
     width: 2.5vw;
@@ -394,6 +392,123 @@ h4 {
     grid-area: i;
     width: 2.5vw;
 }
+
+
+@media  (max-width: 500px) and (orientation: portrait)  {  
+
+/* page web dev smartphone */
+.page.web-right1 {
+    width: 100vw;
+    left: 80vw;
+    margin: 0 12vw;
+    top: 7vh;
+    height: 90vh;
+    padding: 0 0;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+}
+
+.rose_form {
+    width: 90vw;
+    height: 35vw;
+    left: 10vw;
+}
+
+.text_web {
+    top: 8vw;
+}
+
+.text_web h1 {
+    margin: 0 20vw 17vw  5vw;
+}
+
+.text_web p {
+    width: 60vw;
+    color: rgba(235, 122, 221, 0.87);
+    font-size: 13px;
+}
+
+.logos_web {
+    display: grid;
+    grid-template-columns: repeat(4, 30px);
+    grid-template-rows: repeat(6, 30pxx);
+    height: 200px;
+    width: 80px;
+    grid-gap: 10px 10px;
+    align-content: space-between;
+    grid-template-areas:
+    "a b c d"
+    "e f g h"
+    "i j k l";
+    position: relative;
+    top: 12vw;
+    left: 14vw;
+    z-index: 10;
+}
+
+.logo1 .logo2 .logo3 .logo4 .logo5 .logo6 .logo7 .logo8 .logo9 .logo10 .logo11 .logo12 {
+        justify-self: center;
+        width: 30px;
+}
+
+.logo1{
+    grid-area: a;
+    width: 30px;
+}
+
+.logo2{
+    grid-area: c;
+    width: 30px;
+}
+
+.logo3{
+    grid-area: e;
+    width: 30px;
+}
+
+.logo4{
+    grid-area: g;
+    width: 30px;
+}
+
+.logo5{
+    grid-area: j;
+    width: 30px;
+}
+
+.logo6{
+    grid-area: d;
+    width: 30px;
+}
+
+.logo7{
+    grid-area: b;
+    width: 30px;
+}
+
+.logo9{
+    grid-area: h;
+    width: 30px;
+}
+
+.logo10{
+    grid-area: k;
+    width: 30px;
+}
+
+.logo11{
+    grid-area: l;
+    width: 30px;
+}
+
+.logo12{
+    grid-area: i;
+    width: 30px;
+} 
+    
+}
+
 
 /* page graphiste droite bas */
 
