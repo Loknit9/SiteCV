@@ -199,7 +199,7 @@ h4 {
     }
 }
 
-/* responsive changement pour smartphone */
+/* accueil responsive changement pour smartphone */
 @media (max-width: 500px) and (orientation: portrait) {
 
     header {
@@ -225,12 +225,14 @@ h4 {
 
     .cercle {
         width: 40px;
-    height: 40px;
-    border-radius: 20px;
+        height: 40px;
+        border-radius: 20px;
     }
 
-    #orange_bio, #bleu_projet, #rose_web #rouge_grafic {
-        margin:0%;
+    #orange_bio,
+    #bleu_projet,
+    #rose_web #rouge_grafic {
+        margin: 0%;
         height: 10vh;
     }
 
@@ -250,7 +252,7 @@ h4 {
     }
 
     #rose_web {
-        transform: translate(1vw, 9vw);        
+        transform: translate(1vw, 9vw);
     }
 
     .text-rose {
@@ -266,7 +268,7 @@ h4 {
     }
 
     #rouge_grafic {
-        transform: translate(1vw, 3vw);  
+        transform: translate(1vw, 3vw);
     }
 
     .text-rouge {
@@ -296,20 +298,20 @@ h4 {
 }
 
 .rose_form {
-    width: 62vw;
-    height: 42vw;
+    width: 68vw;
+    height: 52vw;
     border-radius: 68% 24% 24% 62% / 33% 38% 50% 59%;
     background-color: rgba(235, 122, 221, 0.87);
     top: -6vw;
-    left: 5vw;
+    left: 0vw;
     position: absolute;
 }
 
 .text_web {
     position: relative;
     z-index: 5;
-    top: 4vw;
-    left: 9vw;
+    top: 2vw;
+    left: 13vw;
 }
 
 .text_web p {
@@ -318,20 +320,79 @@ h4 {
 
 .logos_web {
     display: grid;
-    width: 8vw;
-    grid-template-columns: 4vw 4vw;
-    align-items: start;
-    gap: 12vw 3vw;
+    grid-template-columns: repeat(2, 40px);
+    grid-template-rows: repeat(6, 45px);
+    height: 200px;
+    width: 80px;
+    grid-gap: 10px 20px;
+    align-content: space-between;
+    grid-template-areas:
+    "a b"
+    "c d"
+    "e f"
+    "g h"
+    "i j"
+    "k l";
     position: relative;
-    top: -8vw;
-    left: 48vw;
-    z-index: 6;
-
+    top: -20vw;
+    left: 50vw;
+    z-index: 10;
 }
 
-.col {
-    display: flex;
-    flex-direction: column;
+.logo1 .logo2 .logo3 .logo4 .logo5 .logo6 .logo7 .logo8 .logo9 .logo10 .logo11 .logo12 {
+        justify-self: center;
+}
+
+
+.logo1{
+    grid-area: a;
+    width: 2.5vw;
+}
+
+.logo2{
+    grid-area: c;
+}
+
+.logo3{
+    grid-area: e;
+}
+
+.logo4{
+    grid-area: g;
+}
+
+.logo5{
+    grid-area: j;
+    width: 2.5vw;
+}
+
+.logo6{
+    grid-area: d;
+}
+
+.logo7{
+    grid-area: b;
+    width: 2.5vw;
+}
+
+.logo9{
+    grid-area: h;
+    width: 2.5vw;
+}
+
+.logo10{
+    grid-area: k;
+    width: 2.5vw;
+}
+
+.logo11{
+    grid-area: l;
+    width: 2.5vw;
+}
+
+.logo12{
+    grid-area: i;
+    width: 2.5vw;
 }
 
 /* page graphiste droite bas */
