@@ -116,7 +116,7 @@ h4 {
     width: fit-content;
 }
 
-#bleu_projet {
+.bleu_projet {
     width: 27vw;
     height: 20vw;
     border-radius: 48% 52% 70% 30% / 69% 54% 46% 31%;
@@ -239,7 +239,7 @@ h4 {
         background-color: rgba(255, 77, 0, 0.816);
     }
 
-    #bleu_projet {
+    .bleu_projet {
         transform: translate(1vw, 28vw);
     }
 
@@ -320,11 +320,10 @@ h4 {
 .logos_web {
     display: grid;
     grid-template-columns: repeat(2, 40px);
-    grid-template-rows: repeat(6, 45px);
-    height: 200px;
+    grid-template-rows: repeat(6, 50px);
     width: 80px;
-    grid-gap: 10px 20px;
-    align-content: space-between;
+    grid-gap: 10px 35px;
+    align-items: center;
     grid-template-areas:
     "a b"
     "c d"
@@ -333,22 +332,20 @@ h4 {
     "i j"
     "k l";
     position: relative;
-    top: -20vw;
+    top: -32vh;
     left: 50vw;
     z-index: 10;
 }
 
-.logo1 .logo2 .logo3 .logo4 .logo5 .logo6 .logo7 .logo8 .logo9 .logo10 .logo11 .logo12 {
-        justify-self: center;
-}
 
 .logo1{
     grid-area: a;
-    width: 2.5vw;
+    width: 2.8vw;
 }
 
 .logo2{
     grid-area: c;
+    width: 4vw;
 }
 
 .logo3{
@@ -361,16 +358,17 @@ h4 {
 
 .logo5{
     grid-area: j;
-    width: 2.5vw;
+    width: 5vw;
 }
 
 .logo6{
     grid-area: d;
+
 }
 
 .logo7{
     grid-area: b;
-    width: 2.5vw;
+    width: 3vw;
 }
 
 .logo9{
@@ -392,6 +390,7 @@ h4 {
     grid-area: i;
     width: 2.5vw;
 }
+
 
 
 @media  (max-width: 500px) and (orientation: portrait)  {  
@@ -432,11 +431,9 @@ h4 {
 .logos_web {
     display: grid;
     grid-template-columns: repeat(4, 30px);
-    grid-template-rows: repeat(6, 30pxx);
-    height: 200px;
-    width: 80px;
-    grid-gap: 10px 10px;
-    align-content: space-between;
+    grid-template-rows: repeat(6, 40px);
+    grid-gap: 5px 20px;
+    align-items: center;
     grid-template-areas:
     "a b c d"
     "e f g h"
@@ -445,11 +442,6 @@ h4 {
     top: 12vw;
     left: 14vw;
     z-index: 10;
-}
-
-.logo1 .logo2 .logo3 .logo4 .logo5 .logo6 .logo7 .logo8 .logo9 .logo10 .logo11 .logo12 {
-        justify-self: center;
-        width: 30px;
 }
 
 .logo1{
@@ -474,7 +466,7 @@ h4 {
 
 .logo5{
     grid-area: j;
-    width: 30px;
+    width: 40px;
 }
 
 .logo6{
