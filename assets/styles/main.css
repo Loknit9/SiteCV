@@ -135,7 +135,7 @@ h4 {
     width: 35vw;
     height: 30vw;
     border-radius: 65% 35% 40% 60% / 31% 79% 21% 69%;
-    background-color: rgba(235, 122, 221, 0.87);
+    background-color: rgba(224, 97, 210, 0.87);
     transform: translate(30vw, -30vw);
     z-index: 2;
     animation: blob 8s ease-in-out infinite, float 125s ease-in-out infinite;
@@ -198,90 +198,6 @@ h4 {
     }
 }
 
-/* accueil responsive changement pour smartphone */
-@media (max-width: 500px) and (orientation: portrait) {
-
-    header {
-        background-color: rgb(255, 255, 255);
-        height: 50px;
-        width: 100vw;
-        margin: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    .page.accueil-centre {
-        left: 0;
-        top: 7vh;
-        width: 80vw;
-        height: 82vh;
-        overflow: hidden;
-        margin: 0 4vw;
-        padding: 1vh 0;
-        position: relative;
-    }
-
-    .cercle {
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-    }
-
-    #orange_bio,
-    #bleu_projet,
-    #rose_web, #rouge_grafic {
-        margin-left: -5vw;
-    }
-
-    #orange_bio {
-        transform: translate(1vw, 35vw);
-        background-color: rgba(255, 77, 0, 0.816);
-    }
-
-    .bleu_projet {
-        transform: translate(1vw, 28vw);
-    }
-
-    .text-bleu {
-        transform: translate(4vw, 6vw) rotate(0deg);
-        color: white;
-        width: fit-content;
-    }
-
-    #rose_web {
-        transform: translate(1vw, 22vw);
-    }
-
-    .text-rose {
-        transform: translate(10vw, 12vw) rotate(340deg);
-        color: white;
-        width: fit-content;
-    }
-
-    .text-rose2 {
-        transform: translate(17vw, 5vw) rotate(340deg);
-        color: white;
-        width: fit-content;
-    }
-
-    #rouge_grafic {
-        transform: translate(1vw, 16vw);
-    }
-
-    .text-rouge {
-        transform: translate(4vw, 5vw) rotate(25deg);
-        color: white;
-        width: fit-content;
-    }
-
-    .reseaux {
-        position: relative;
-        bottom: 60vh;
-        left: 70vw;
-    }
-    
-}
 
 /* page web dev droite */
 
@@ -300,7 +216,7 @@ h4 {
     width: 68vw;
     height: 52vw;
     border-radius: 68% 24% 24% 62% / 33% 38% 50% 59%;
-    background-color: rgba(235, 122, 221, 0.87);
+    background-color: rgba(224, 97, 210, 0.87);
     top: -6vw;
     left: 0vw;
     position: absolute;
@@ -392,114 +308,6 @@ h4 {
 }
 
 
-
-@media  (max-width: 500px) and (orientation: portrait)  {  
-
-/* page web dev smartphone */
-.page.web-right1 {
-    width: 100vw;
-    left: 80vw;
-    margin: 0 12vw;
-    top: 7vh;
-    height: 90vh;
-    padding: 0 0;
-    overflow: hidden;
-    color: white;
-    padding: 0;
-}
-
-.rose_form {
-    width: 90vw;
-    height: 35vw;
-    left: 10vw;
-}
-
-.text_web {
-    top: 8vw;
-}
-
-.text_web h1 {
-    margin: 0 20vw 17vw  5vw;
-}
-
-.text_web p {
-    width: 60vw;
-    color: rgba(235, 122, 221, 0.87);
-    font-size: 13px;
-}
-
-.logos_web {
-    display: grid;
-    grid-template-columns: repeat(4, 30px);
-    grid-template-rows: repeat(6, 40px);
-    grid-gap: 5px 20px;
-    align-items: center;
-    grid-template-areas:
-    "a b c d"
-    "e f g h"
-    "i j k l";
-    position: relative;
-    top: 12vw;
-    left: 14vw;
-    z-index: 10;
-}
-
-.logo1{
-    grid-area: a;
-    width: 30px;
-}
-
-.logo2{
-    grid-area: c;
-    width: 30px;
-}
-
-.logo3{
-    grid-area: e;
-    width: 30px;
-}
-
-.logo4{
-    grid-area: g;
-    width: 30px;
-}
-
-.logo5{
-    grid-area: j;
-    width: 40px;
-}
-
-.logo6{
-    grid-area: d;
-    width: 30px;
-}
-
-.logo7{
-    grid-area: b;
-    width: 30px;
-}
-
-.logo9{
-    grid-area: h;
-    width: 30px;
-}
-
-.logo10{
-    grid-area: k;
-    width: 30px;
-}
-
-.logo11{
-    grid-area: l;
-    width: 30px;
-}
-
-.logo12{
-    grid-area: i;
-    width: 30px;
-} 
-    
-}
 
 
 /* page graphiste droite bas */
@@ -617,7 +425,7 @@ ul {
 }
 
 .rose {
-    background-color: rgba(235, 122, 221, 0.87);
+    background-color: rgba(224, 97, 210, 0.87);
     min-height: 40px;
     max-width: 30px;
 }
