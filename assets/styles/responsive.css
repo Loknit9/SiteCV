@@ -103,5 +103,90 @@
         grid-area: i;
         width: 30px;
     } 
+
+    /* accueil responsive changement pour smartphone */
+@media (max-width: 500px) and (orientation: portrait) {
+
+    header {
+        background-color: rgb(255, 255, 255);
+        height: 50px;
+        width: 100vw;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .page.accueil-centre {
+        left: 0;
+        top: 7vh;
+        width: 80vw;
+        height: 82vh;
+        overflow: hidden;
+        margin: 0 4vw;
+        padding: 1vh 0;
+        position: relative;
+    }
+
+    .cercle {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    #orange_bio,
+    #bleu_projet,
+    #rose_web, #rouge_grafic {
+        margin-left: -5vw;
+    }
+
+    #orange_bio {
+        transform: translate(1vw, 35vw);
+        background-color: rgba(255, 77, 0, 0.816);
+    }
+
+    .bleu_projet {
+        transform: translate(1vw, 28vw);
+    }
+
+    .text-bleu {
+        transform: translate(4vw, 6vw) rotate(0deg);
+        color: white;
+        width: fit-content;
+    }
+
+    #rose_web {
+        transform: translate(1vw, 22vw);
+    }
+
+    .text-rose {
+        transform: translate(10vw, 12vw) rotate(340deg);
+        color: white;
+        width: fit-content;
+    }
+
+    .text-rose2 {
+        transform: translate(17vw, 5vw) rotate(340deg);
+        color: white;
+        width: fit-content;
+    }
+
+    #rouge_grafic {
+        transform: translate(1vw, 16vw);
+    }
+
+    .text-rouge {
+        transform: translate(4vw, 5vw) rotate(25deg);
+        color: white;
+        width: fit-content;
+    }
+
+    .reseaux {
+        position: relative;
+        bottom: 60vh;
+        left: 70vw;
+    }
+    
+}
         
     }

@@ -99,6 +99,16 @@ h4 {
     margin: 2% 0 0.75% 0;
 }
 
+h5 {
+    font-family: 'DuctusGeometric';
+    font-size: calc(0.5rem + 0.5vw);
+    margin: 0;
+}
+
+span {
+    text-decoration: underline;
+}
+
 
 /* section bloc page accueil  */
 #orange_bio {
@@ -142,13 +152,13 @@ h4 {
 }
 
 .text-rose {
-    transform: translate(21vw, 0.7vw) rotate(12deg);
+    transform: translate(20vw, 0.9vw) rotate(12deg);
     color: white;
     width: fit-content;
 }
 
 .text-rose2 {
-    transform: translate(25.6vw, 0.6vw) rotate(50deg);
+    transform: translate(24vw, 0.8vw) rotate(50deg);
     color: white;
     width: fit-content;
 }
@@ -163,7 +173,7 @@ h4 {
 }
 
 .text-rouge {
-    transform: translate(12vw, 4vw) rotate(32deg);
+    transform: translate(12vw, 4vw) rotate(29deg);
     color: white;
     width: fit-content;
 }
@@ -198,90 +208,7 @@ h4 {
     }
 }
 
-/* accueil responsive changement pour smartphone */
-@media (max-width: 500px) and (orientation: portrait) {
 
-    header {
-        background-color: rgb(255, 255, 255);
-        height: 50px;
-        width: 100vw;
-        margin: 0;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    .page.accueil-centre {
-        left: 0;
-        top: 7vh;
-        width: 80vw;
-        height: 82vh;
-        overflow: hidden;
-        margin: 0 4vw;
-        padding: 1vh 0;
-        position: relative;
-    }
-
-    .cercle {
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-    }
-
-    #orange_bio,
-    #bleu_projet,
-    #rose_web, #rouge_grafic {
-        margin-left: -5vw;
-    }
-
-    #orange_bio {
-        transform: translate(1vw, 35vw);
-        background-color: rgba(255, 77, 0, 0.816);
-    }
-
-    .bleu_projet {
-        transform: translate(1vw, 28vw);
-    }
-
-    .text-bleu {
-        transform: translate(4vw, 6vw) rotate(0deg);
-        color: white;
-        width: fit-content;
-    }
-
-    #rose_web {
-        transform: translate(1vw, 22vw);
-    }
-
-    .text-rose {
-        transform: translate(10vw, 12vw) rotate(340deg);
-        color: white;
-        width: fit-content;
-    }
-
-    .text-rose2 {
-        transform: translate(17vw, 5vw) rotate(340deg);
-        color: white;
-        width: fit-content;
-    }
-
-    #rouge_grafic {
-        transform: translate(1vw, 16vw);
-    }
-
-    .text-rouge {
-        transform: translate(4vw, 5vw) rotate(25deg);
-        color: white;
-        width: fit-content;
-    }
-
-    .reseaux {
-        position: relative;
-        bottom: 60vh;
-        left: 70vw;
-    }
-    
-}
 
 /* page web dev droite */
 
@@ -315,15 +242,17 @@ h4 {
 
 .text_web p {
     width: 25vw;
+    font-size: 1vw;
 }
 
 .logos_web {
     display: grid;
     grid-template-columns: repeat(2, 40px);
     grid-template-rows: repeat(6, 50px);
-    width: 80px;
-    grid-gap: 10px 35px;
+    width: 120px;
+    grid-gap: 10px 50px;
     align-items: center;
+    justify-items: center;
     grid-template-areas:
     "a b"
     "c d"
@@ -392,116 +321,6 @@ h4 {
 }
 
 
-
-@media  (max-width: 500px) and (orientation: portrait)  {  
-
-/* page web dev smartphone */
-.page.web-right1 {
-    width: 100vw;
-    left: 80vw;
-    margin: 0 12vw;
-    top: 7vh;
-    height: 90vh;
-    padding: 0 0;
-    overflow: hidden;
-    color: white;
-    padding: 0;
-}
-
-.rose_form {
-    width: 90vw;
-    height: 35vw;
-    left: 10vw;
-}
-
-.text_web {
-    top: 8vw;
-}
-
-.text_web h1 {
-    margin: 0 20vw 17vw  5vw;
-}
-
-.text_web p {
-    width: 60vw;
-    color: rgba(235, 122, 221, 0.87);
-    font-size: 13px;
-}
-
-.logos_web {
-    display: grid;
-    grid-template-columns: repeat(4, 30px);
-    grid-template-rows: repeat(6, 40px);
-    grid-gap: 5px 20px;
-    align-items: center;
-    grid-template-areas:
-    "a b c d"
-    "e f g h"
-    "i j k l";
-    position: relative;
-    top: 12vw;
-    left: 14vw;
-    z-index: 10;
-}
-
-.logo1{
-    grid-area: a;
-    width: 30px;
-}
-
-.logo2{
-    grid-area: c;
-    width: 30px;
-}
-
-.logo3{
-    grid-area: e;
-    width: 30px;
-}
-
-.logo4{
-    grid-area: g;
-    width: 30px;
-}
-
-.logo5{
-    grid-area: j;
-    width: 40px;
-}
-
-.logo6{
-    grid-area: d;
-    width: 30px;
-}
-
-.logo7{
-    grid-area: b;
-    width: 30px;
-}
-
-.logo9{
-    grid-area: h;
-    width: 30px;
-}
-
-.logo10{
-    grid-area: k;
-    width: 30px;
-}
-
-.logo11{
-    grid-area: l;
-    width: 30px;
-}
-
-.logo12{
-    grid-area: i;
-    width: 30px;
-} 
-    
-}
-
-
 /* page graphiste droite bas */
 
 .page.graphiste-right2 {
@@ -519,26 +338,49 @@ h4 {
 .text_graphiste {
     position: relative;
     z-index: 5;
-    top: 4vw;
-    left: 9vw;
+    top: 6vw;
+    left: 11vw;
 }
 
 .text_graphiste p {
     width: 25vw;
+    font-size: 1vw;
 }
 
 .design {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(1, 20px);
+    grid-template-rows: repeat(4, 30px);
+    grid-gap: 50px;
+    justify-items: center;
+    grid-template-areas:
+    "a"
+    "b"
+    "c";
     position: relative;
     top: 0vw;
-    left: 48vw;
+    left: 55vw;
     z-index: 6;
 }
 
+
+.logo_a{
+    grid-area: a;
+    width: 1vw;
+}
+
+.logo_b{
+    grid-area: b;
+    width: 4vw;
+}
+
+.logo_c{
+    grid-area: c;
+}
+
+
 .design img {
-    width: 6vw;
+    width: 4vw;
 }
 
 .rouge_form {
