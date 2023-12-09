@@ -4,6 +4,7 @@ const left_btn2 = document.getElementById("form");
 const right_btn = document.getElementById("rose_web");
 const right_btn2 = document.getElementById("rouge_grafic");
 const bottom_btn = document.querySelector(".bleu_projet");
+const menu_burger = document.querySelector(".menu_burger");
 
 const movable = document.querySelector(".movable");
 
@@ -30,6 +31,10 @@ center_btn.addEventListener("click", function(){
     remove_colors();
     add_color("vert");
     console.log(movable.style.transform);
+});
+
+menu_burger.addEventListener("click", function(){
+        menu_burger.style.display = "none";
 });
 
 left_btn.addEventListener("click", function(){

@@ -42,7 +42,8 @@
         grid-template-areas:
         "a b c d"
         "e f g h"
-        "i j k l";
+        "i j k l"
+        "m n o p";
         position: relative;
         top: 12vw;
         left: 14vw;
