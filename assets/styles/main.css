@@ -59,7 +59,10 @@ header {
     padding-left: 15px ;
     padding-top: 2px;
     left: 85vw;
-    display: block;
+}
+
+.menu_burger{
+    visibility: hidden;
 }
 
 .menu_burger ul{
