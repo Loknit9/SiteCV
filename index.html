@@ -13,6 +13,19 @@
     <header>
         <nav class="menu">
             <div class="cercle" id="home"></div>
+            <div class="menu_burger">
+                <img src="./assets/img/hamburger-menu-more-2-svgrepo-com.svg" alt="">
+                <!-- <nav>
+                    <ul class="dropdown_menu">
+                        <li>accueil</li>
+                        <li>bio</li>
+                        <li>portfolio</li>
+                        <li>web</li>
+                        <li>graphiste</li>
+                    </ul>
+                </nav> -->
+                    
+            </div>
         </nav>
     </header>
     <main>
@@ -26,11 +39,11 @@
                     <h1 class="load">...</h1>
                 </div>
                 <section class="blocs floating">
-                    <ul class="nav">
+                    <ul class="menu_centre">
                         <li id="orange_bio">
                             <h2 class="text-orange">bio</h2>
                         </li>
-                        <li class="bleu_projet">
+                        <li id="bleu_projet">
                             <h2 class="text-bleu">portfolio</h2>
                         </li>
                         <li id="rose_web">
@@ -48,11 +61,12 @@
             <section class="page web-right1">
                 <div class="text_web">
                     <h1>web développeuse</h1>
+                    <h5>junior</h5>
                     <p>
                         Après 25 ans à travailler en tant que graphiste, il était temps d'ajouter des cordes à mon arc.
                     </p>
                     <p>
-                        J'ai suivi une formation de web développeuse back-end auprès d'Interface3 à Bruxelles.
+                        J'ai suivi une formation de <span>web développeuse back-end </span> auprès d'Interface3 à Bruxelles.
                         Formation intensive de 15 mois (13 mois de cours à temps plein et 2 mois de stage) qui m'a permis d'apprendre les différents langages et frameworks nécessaire à une web developpeuse.
                     </p>
                     <p>
@@ -73,6 +87,10 @@
                         <img class = "logo10" src="assets/img/web/python.svg" alt="">
                         <img class = "logo11" src="assets/img/web/wordpress-simple.svg" alt="">
                         <img class = "logo12" src="assets/img/web/angular.svg" alt="">
+                        <img class = "logo13" src="assets/img/web/microsoftsqlserver-svgrepo-com.svg" alt="">
+                        <img class = "logo14" src="assets/img/web/visualstudio-svgrepo-com.svg" alt="">
+                        <img class = "logo15" src="assets/img/web/visualstudiocode-svgrepo-com.svg" alt="">
+                        <img class = "logo16" src="assets/img/web/figma-svgrepo-com.svg" alt="">
                     
                 </div>
                 <div class="rose_form floating"></div>
@@ -84,16 +102,18 @@
             <section class="page graphiste-right2">
                 <div class="text_graphiste">
                     <h1>graphiste</h1>
+                    <h5>senior</h5>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae id adipisci
-                        repellendus
-                        accusantium at dolor?
+                        Durant ma carrière de graphiste, j'ai réalisé des magazines dans une petite maison d'édition, des sites webs avec wordpress, j'ai fait du packaging pour Delhaize, si vous avez achetez des produits bio, 365 ou des fruits et légumes, vous connaissez mon travail ;).
+                        J'ai mis en page des livres, j'ai créé et imprimé en sérigraphie des cartes, faire-part, ...
                     </p>
+                    <p>J'ai aussi géré les projets sur lesquels j'ai travaillé, été en relation avec les fournisseurs, les clients, ...</p>
+                    <p></p>
                 </div>
                     <div class="design">
-                        <img src="assets/img/design/indesign-svgrepo-com.svg" alt="">
-                        <img src="assets/img/design/photoshop-svgrepo-com.svg" alt="">
-                        <img src="assets/img/design/illustrator-svgrepo-com.svg">
+                        <img class="logo_a" src="assets/img/design/indesign-svgrepo-com.svg" alt="">
+                        <img class="logo_b" src="assets/img/design/photoshop-svgrepo-com.svg" alt="">
+                        <img class="logo_c" src="assets/img/design/illustrator-svgrepo-com.svg">
                     </div>
                     <div class="rouge_form floating"></div>
             </section>
@@ -101,29 +121,108 @@
             <!-- page bio // gauche 1 -->
             <section class="page bio-left">
                 <div id="bio">
-                    <div class="pro">
-                        <h4>parcours pro</h4>
-                        <h2>graphiste</h2>
-                        <p>free-lance</p>
-                        <p>sunny side up - Bruxelles</p>
-                        <p>Propaganda - Bruxelles</p>
-                        <p>happy publishing - Bruxelles</p>
-                    </div>
-                    <div class="wbw">
-                        <h2>co-créatrice</h2>
-                        <p>woolbabywool.be</p>
-                    </div>
-                    <div class="seri">
-                        <h2>sérigraphe</h2>
-                        <p>free lance</p>
-                    </div>
-                    <div class="formations">
-                        <h4>formations</h4>
-                        <h2>web developpeuse - interface3 - Bruxelles</h2>
-                        <p>habillement - Bruxelles</p>
-                        <p>bonneterie - Liège</p>
-                        <p>néerlandais - CVO - Jette</p>
-                        <p>sérigraphie - erg - Bruxelles</p>
+                    <h2>formations</h2>
+                    <h2>parcours pro</h2>
+                    <div class="timeline">
+                        <ul>
+                            <li>
+                                <div class="content_right">
+                                    <h5>web developpeuse - interface3 - Bruxelles</h5>
+                                    <p></p>
+                                </div>
+                                <div class="time_left">
+                                    <h5>2024</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content_right">
+                                    <p>habillement - Bruxelles</p>
+                                </div>
+                                <div class="time_left">
+                                    <h5>2023</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content_right">
+                                    <p>bonneterie - Liège</p>
+                                    <div class="time_left">
+                                        <h5>2016</h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content_right">
+                                    <p>néerlandais - CVO - Jette</p>
+                                    <div class="time_left">
+                                        <h5>2016</h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content_right">
+                                    <p>sérigraphie - erg - Bruxelles</p>
+                                    <div class="time_left">
+                                        <h5>1995</h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content_left">
+                                    <h5>graphiste</h5>
+                                    <p>free-lance</p>
+                                    <div class="time_right">
+                                        <h5>2017 - 2023</h5>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li>
+                                <div class="content_left">
+                                    <h5>graphiste</h5>
+                                    <p>sunny side up - Bruxelles</p>
+                                    <div class="time_right">
+                                        <h5>2013 - 2022</h5>
+                                    </div>
+                                </div>   
+                            </li>
+                            <li>
+                                <div class="content_left">
+                                    <h5>co-créatrice</h5>
+                                    <p>woolbabywool.be</p>
+                                    <div class="time_right">
+                                        <h5>2016 - 2021</h5>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content_left">
+                                    <h5>graphiste</h5>
+                                    <p>Propaganda - Bruxelles</p>
+                                    <div class="time_right">
+                                        <h5>2011 - 2013</h5>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content_left">
+                                    <h5>graphiste</h5>
+                                    <p>happy publishing - Bruxelles</p>
+                                    <div class="time_right">
+                                        <h5>1999 - 2011</h5>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li>
+                                <div class="content_left">
+                                    <h5>sérigraphe</h5>
+                                    <p>free lance</p>
+                                    <div class="time_right">
+                                        <h5>1995 - 2011</h5>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>

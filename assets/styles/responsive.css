@@ -1,8 +1,114 @@
 @media  (max-width: 500px) and (orientation: portrait)  {  
 
+    /* page web dev smartphone */
+    .page.web-right1 {
+        width: 100vw;
+        left: 80vw;
+        margin: 0 12vw;
+        top: 7vh;
+        height: 90vh;
+        padding: 0 0;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+    }
     
-/* accueil responsive changement pour smartphone */
-header {
+    .rose_form {
+        width: 90vw;
+        height: 35vw;
+        left: 10vw;
+    }
+    
+    .text_web {
+        top: 8vw;
+    }
+    
+    .text_web h1 {
+        margin: 0 20vw 17vw  5vw;
+    }
+    
+    .text_web p {
+        width: 60vw;
+        color: rgba(235, 122, 221, 0.87);
+        font-size: 13px;
+    }
+    
+    .logos_web {
+        display: grid;
+        grid-template-columns: repeat(4, 30px);
+        grid-template-rows: repeat(6, 40px);
+        grid-gap: 5px 20px;
+        align-items: center;
+        grid-template-areas:
+        "a b c d"
+        "e f g h"
+        "i j k l"
+        "m n o p";
+        position: relative;
+        top: 12vw;
+        left: 14vw;
+        z-index: 10;
+    }
+    
+    .logo1{
+        grid-area: a;
+        width: 30px;
+    }
+    
+    .logo2{
+        grid-area: c;
+        width: 30px;
+    }
+    
+    .logo3{
+        grid-area: e;
+        width: 30px;
+    }
+    
+    .logo4{
+        grid-area: g;
+        width: 30px;
+    }
+    
+    .logo5{
+        grid-area: j;
+        width: 40px;
+    }
+    
+    .logo6{
+        grid-area: d;
+        width: 30px;
+    }
+    
+    .logo7{
+        grid-area: b;
+        width: 30px;
+    }
+    
+    .logo9{
+        grid-area: h;
+        width: 30px;
+    }
+    
+    .logo10{
+        grid-area: k;
+        width: 30px;
+    }
+    
+    .logo11{
+        grid-area: l;
+        width: 30px;
+    }
+    
+    .logo12{
+        grid-area: i;
+        width: 30px;
+    } 
+
+    /* accueil responsive changement pour smartphone */
+@media (max-width: 500px) and (orientation: portrait) {
+
+    header {
         background-color: rgb(255, 255, 255);
         height: 50px;
         width: 100vw;
@@ -82,109 +188,6 @@ header {
         left: 70vw;
     }
     
-
-    /* page web dev smartphone */
-    .page.web-right1 {
-        width: 100vw;
-        left: 80vw;
-        margin: 0 12vw;
-        top: 7vh;
-        height: 90vh;
-        padding: 0 0;
-        overflow: hidden;
-        color: white;
-        padding: 0;
-    }
-    
-    .rose_form {
-        width: 90vw;
-        height: 35vw;
-        left: 10vw;
-    }
-    
-    .text_web {
-        top: 8vw;
-    }
-    
-    .text_web h1 {
-        margin: 0 20vw 17vw  5vw;
-    }
-    
-    .text_web p {
-        width: 60vw;
-        color: rgba(224, 97, 210, 0.87);
-        font-size: 13px;
-    }
-    
-    .logos_web {
-        display: grid;
-        grid-template-columns: repeat(4, 30px);
-        grid-template-rows: repeat(6, 40px);
-        grid-gap: 5px 20px;
-        align-items: center;
-        grid-template-areas:
-        "a b c d"
-        "e f g h"
-        "i j k l";
-        position: relative;
-        top: 12vw;
-        left: 14vw;
-        z-index: 10;
-    }
-    
-    .logo1{
-        grid-area: a;
-        width: 30px;
-    }
-    
-    .logo2{
-        grid-area: c;
-        width: 30px;
-    }
-    
-    .logo3{
-        grid-area: e;
-        width: 30px;
-    }
-    
-    .logo4{
-        grid-area: g;
-        width: 30px;
-    }
-    
-    .logo5{
-        grid-area: j;
-        width: 40px;
-    }
-    
-    .logo6{
-        grid-area: d;
-        width: 30px;
-    }
-    
-    .logo7{
-        grid-area: b;
-        width: 30px;
-    }
-    
-    .logo9{
-        grid-area: h;
-        width: 30px;
-    }
-    
-    .logo10{
-        grid-area: k;
-        width: 30px;
-    }
-    
-    .logo11{
-        grid-area: l;
-        width: 30px;
-    }
-    
-    .logo12{
-        grid-area: i;
-        width: 30px;
-    } 
+}
         
     }
