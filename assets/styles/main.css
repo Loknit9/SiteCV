@@ -445,9 +445,7 @@ span {
 
 
 /* page bio left */
-#bio h2{
-    color: rgba(255, 77, 0, 0.816)
-}
+
 .page.bio-left {
     left: -100vw;
     top: 7vh;
@@ -456,108 +454,62 @@ span {
     overflow: hidden;
 }
 
-.timeline{
-    position:relative;
-    margin:10px auto;
-    box-sizing:border-box;
-    }
+.titre{
+    display: grid;
+    grid-template-columns: repeat(2, 30vw);
+    grid-gap: 10px;
+    grid-template-rows: repeat(1, 60px);
+    justify-items: center;
+    grid-template-areas:
+    "a b";
+    position: relative;
+}
+#bio h2{
+    color: rgba(255, 77, 0, 0.816)
+}
+
+.titre1{
+    grid-area: a;
+}
+
+.titre2{
+    grid-area: b;
+}
 
 .timeline:before{
     content:'';
     position:absolute;
-    left:50%;
+    left:40%;
     width:2px;
     height:100%;
-    background:#c5c5c5;
+    background:rgba(255, 77, 0, 0.816);
     }
+
 .timeline ul{
-    padding:0;
-    margin:0;
-    }
+        padding:0;
+        margin:0;
+        }
 .timeline ul li{
-    position:relative;
-    width:50%;
-    padding:20px 40px;
-    box-sizing:border-box;
-    }
+        position:relative;
+        width:100%;
+        padding:10px 10px;
+        /* box-sizing:border-box; */
+        }
+
 .timeline ul li .content_left{
-    display: -ms-inline-grid;
-    text-align:left;
+    float: right;
+    text-align:start;
     clear:both;
     }
+
 .timeline ul li .content_right{
-    display: -ms-inline-grid;
-    text-align:left;
-    clear:both;
-    }
+        display: -ms-inline-grid;
+        text-align:left;
+        clear:both;
+        }
 .content_left .content_right{
-    padding-bottom:20px;
-    }
-    /* boule orange / ligne parcours pro*/
-    .timeline ul .content_left:before
-    {
-    content:'';
-    position:absolute;
-    width:10px;
-    height:10px;
-    top:24px;
-    right:-6px;
-    background:rgba(255, 77, 0, 0.816);
-    border-radius:50%;
-    }
-    /* boule orange + ligne formation*/
-
-    .timeline ul li .content_right:before
-    {
-    content:'';
-    position:absolute;
-    width:10px;
-    height:10px;
-    top:24px;
-    left:50%;
-    background:rgba(255, 77, 0, 0.816);
-    border-radius:50%;
-    }
-
-    .timeline ul li h5{
-    padding:0;
-    margin:0;
-    }
-
-    .timeline ul li p{
-    margin:10px 0 0;
-    padding:0;
-    }
-    .timeline ul li .time h4{
-    margin:0;
-    padding:0;
-    font-size:14px;
-    }
-
-    /* années parcours pro */
-    .timeline ul li .time_right
-    {
-    position:absolute;
-    top:12px;
-    left:60%;
-    margin:0;
-    padding:8px 16px;
-    background:rgba(255, 77, 0, 0.816);
-    color:#fff;
-    border-radius:18px;
-    }
-    /* années formations  */
-    .timeline ul li .time_left
-    {
-    position:absolute;
-    top:12px;
-    left:80%;
-    margin:0;
-    padding:8px 16px;
-    background:rgba(255, 77, 0, 0.816);
-    color:#fff;
-    border-radius:18px;
-    }
+        padding-bottom:20px;
+}
 
 /* page contact left bas*/
 
