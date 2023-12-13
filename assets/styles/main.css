@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'DuctusGeometric';
-    src: url('/assets/fonts/DuctusGeometric.woff2'),
+    src: url('../fonts/DuctusGeometric.woff2'),
 }
 
 @font-face {
     font-family: 'Stilu-Light';
-    src: url('/assets/fonts/Stilu-Light.woff2'),
+    src: url('../fonts/Stilu-Light.woff2'),
 }
 
 @font-face {
     font-family: 'Stilu-SemiBold';
-    src: url('/assets/fonts/Stilu-SemiBold.woff2'),
+    src: url('../fonts/Stilu-SemiBold.woff2'),
 }
 
 body {
