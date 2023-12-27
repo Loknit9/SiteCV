@@ -104,7 +104,7 @@ nav li:hover{
 
 /* accueil nom titre */
 .nom {
-    color: rgba(0, 186, 0, 1);
+    color: rgba(0, 186, 0, 1); 
     width: fit-content;
     z-index: 1;
 }
@@ -136,6 +136,40 @@ h5 {
 
 span {
     text-decoration: underline;
+}
+
+.load1{
+    animation: animateIn 1500ms ease forwards
+}
+
+.load2{
+    animation: animateIn 1000ms ease 300ms forwards
+}
+
+.load3{
+    animation: animateIn 1000ms ease 500ms forwards
+}
+
+.load4{
+    animation: animateIn 1000ms ease 700ms forwards
+}
+
+@keyframes animateIn
+{
+    0%{
+        opacity: 0;
+
+    }
+
+    30%{
+        opacity: 0,5;
+
+    }
+    
+    100%{
+        /* // fade in */
+        opacity: 1;
+    }
 }
 
 
@@ -368,6 +402,68 @@ span {
 .logo16{
     grid-area: p;
     width: 2.5vw;
+}
+
+/* cercle tourne stage */
+
+.circle {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	border-radius: 100vmax;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    z-index: 10;
+    left: 8vw;
+    top: -30vh;
+
+}
+
+.logo {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	background-color:rgba(65, 105, 225);
+	/* background-size: cover; */
+	border-radius: 100vmax;
+	background-position: center;
+}
+
+.text {
+	position: absolute;
+    font-family: 'DuctusGeometric';
+	width: 100%;
+	height: 100%;
+	color: rgba(65, 105, 225);
+	font-size: 14px;
+	animation: textRotation 8s linear infinite;
+}
+
+.date{
+    position: absolute;
+    font-family: 'DuctusGeometric';
+    color: white;
+	font-size: 14px;
+    z-index: 14;
+    left: 3.3vw;
+    top: 4.2vh;
+    width: 6vw;
+    text-align: center;
+}
+
+@keyframes textRotation {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.text span {
+	position: absolute;
+    text-decoration: none;
+	left: 50%;
+	font-size: 1.1em;
+	transform-origin: 0 100px;
 }
 
 

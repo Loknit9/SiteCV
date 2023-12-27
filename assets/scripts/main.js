@@ -73,3 +73,13 @@ bottom_btn.addEventListener("click", function(){
     menu_burger.style.visibility = "visible";
     console.log(movable.style.transform);
 });
+
+
+// texte stage tourne autour cercle
+const text = document.querySelector(".text");
+text.innerHTML = text.innerText
+	.split("")
+	.map(
+		(char, i) => `<span style="transform:rotate(${i * 10.3}deg)">${char}</span>`
+	)
+	.join("");
