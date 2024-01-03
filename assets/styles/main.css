@@ -21,7 +21,7 @@ html,
 body {
     width: 100vw;
     margin: 0;
-    background-color: rgb(252, 244, 233);
+    background-color: rgb(251, 231, 228);
 }
 
 header {
@@ -440,17 +440,6 @@ span {
 	animation: textRotation 8s linear infinite;
 }
 
-.date{
-    position: absolute;
-    font-family: 'DuctusGeometric';
-    color: white;
-	font-size: 14px;
-    z-index: 14;
-    left: 3.3vw;
-    top: 4.2vh;
-    width: 6vw;
-    text-align: center;
-}
 
 @keyframes textRotation {
 	to {
@@ -464,6 +453,18 @@ span {
 	left: 50%;
 	font-size: 1.1em;
 	transform-origin: 0 100px;
+}
+
+.dateStage{
+    position: absolute;
+    font-family: 'DuctusGeometric';
+    color: white;
+	font-size: 14px;
+    z-index: 14;
+    left: 3.3vw;
+    top: 4.2vh;
+    width: 6vw;
+    text-align: center;
 }
 
 
@@ -540,71 +541,79 @@ span {
 }
 
 
+
 /* page bio left */
 
 .page.bio-left {
     left: -100vw;
     top: 7vh;
-    width: 80vw;
+    width: 70vw;
     height: 83vh;
     overflow: hidden;
 }
 
-.titre{
-    display: grid;
-    grid-template-columns: repeat(2, 30vw);
-    grid-gap: 10px;
-    grid-template-rows: repeat(1, 60px);
-    justify-items: center;
-    grid-template-areas:
-    "a b";
-    position: relative;
-}
 #bio h2{
     color: rgba(255, 77, 0, 0.816)
 }
 
-.titre1{
+.timeline{
+    
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    grid-gap: 5px;
+    grid-template-rows: repeat(5, 150px);
+    justify-items: left;
+    grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i"
+    "j k l"
+    "m n o";
+    position: relative;
+}
+
+.left1{
     grid-area: a;
 }
 
-.titre2{
+.middle1{
     grid-area: b;
 }
 
-.timeline:before{
-    content:'';
-    position:absolute;
-    left:40%;
-    width:2px;
-    height:100%;
-    background:rgba(255, 77, 0, 0.816);
-    }
+.right1{
+    grid-area: c;
+}
 
-.timeline ul{
-        padding:0;
-        margin:0;
-        }
-.timeline ul li{
-        position:relative;
-        width:100%;
-        padding:10px 10px;
-        /* box-sizing:border-box; */
-        }
+.left2{
+    grid-area: m;
+}
 
-.timeline ul li .content_left{
-    float: right;
-    text-align:start;
-    clear:both;
-    }
+.middle2{
+    grid-area: e;
+}
 
-.timeline ul li .content_right{
-        display: -ms-inline-grid;
-        text-align:left;
-        clear:both;
-        }
-.content_left .content_right{
-        padding-bottom:20px;
+.right2{
+    grid-area: f;
+}
+
+.middle3{
+    grid-area: h;
+}
+
+.right3{
+    grid-area: i;
+}
+
+.middle4{
+    grid-area: k;
+}
+
+.right4{
+    grid-area: l;
+}
+
+.middle5{
+    grid-area: n;
 }
 
 /* page contact left bas*/
