@@ -553,36 +553,60 @@ span {
     
 }
 
-#bio h2{
-    color: rgba(255, 77, 0, 0.816)
+.titre{
+    padding: 0 0 2vw 11vw;
 }
+#bio h1{
+    color: rgba(255, 77, 0, 0.816) 
+}
+
+.timeline h4{
+    color: rgba(255, 77, 0, 0.816) 
+}
+
+
 
 .timeline{
     display: grid;
-    padding: 5vw 8vw 0 11vw;
+    padding: 0vw 8vw 0 11vw;
     grid-template-columns: repeat(3, 18vw);
     grid-gap: 5px;
-    grid-template-rows: repeat(5, 14vh);
+    grid-template-rows: repeat(5vh,14vh, 14vh, 14vh, 14vh);
     justify-items: left;
     grid-template-areas:
-    "a b c"
+    "a b c" 
     "d e f"
     "g h i"
     "j k l"
-    "m n o";
+    "m n o"
+    "p q r";
     position: relative;
 }
 
-.left1{
+.bioTitre1 {
     grid-area: a;
+    height: 5vh;
+    
+}
+.bioTitre2 {
+    height: 5vh;
+    grid-area: b;
+}
+.bioTitre3 {
+    height: 5vh;
+    grid-area: c;
+}
+
+.left1{
+    grid-area: d;
 }
 
 .middle1{
-    grid-area: b;
+    grid-area: e;
 }
 
 .right1{
-    grid-area: c;
+    grid-area: f;
 }
 
 .left2{
@@ -590,31 +614,30 @@ span {
 }
 
 .middle2{
-    grid-area: e;
-}
-
-.right2{
-    grid-area: f;
-}
-
-.middle3{
     grid-area: h;
 }
 
-.right3{
+.right2{
     grid-area: i;
 }
 
-.middle4{
+.middle3{
     grid-area: k;
 }
 
-.right4{
+.right3{
     grid-area: l;
 }
 
-.middle5{
+.left3{
+    grid-area: p;
+}
+.middle4{
     grid-area: n;
+}
+
+.middle5{
+    grid-area: q;
 }
 
 .parcours{
@@ -630,12 +653,12 @@ span {
     height: 10vh;
     border-radius: 30% 20% / 30% 40%;
     background-color: rgba(255, 77, 0, 0.816);
-    padding: 0.9vw;
+    padding: 1.4vw;
     color: white;
 }
 
 .content p{
-    line-height: 2%;
+    line-height: 20%;
 }
 
 /* page contact left bas*/
