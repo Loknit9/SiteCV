@@ -111,14 +111,12 @@ nav li:hover{
 
 h1 {
     font-family: 'DuctusGeometric';
-    /* font-size: 280%; */
     font-size: calc(1.2rem + 1.5vw);
     margin: 0;
 }
 
 h2 {
     font-family: 'DuctusGeometric';
-    /* font-size: 280%; */
     font-size: calc(0.4rem + 1.4vw);
     margin: 0;
 }
@@ -550,7 +548,6 @@ span {
     width: 70vw;
     height: 83vh;
     overflow: hidden;
-    
 }
 
 .titre{
@@ -563,8 +560,6 @@ span {
 .timeline h4{
     color: rgba(255, 77, 0, 0.816) 
 }
-
-
 
 .timeline{
     display: grid;
@@ -670,6 +665,106 @@ span {
     height: 82vh;
     padding: 5vh 0;
 }
+
+.contact h1{
+    color: white;
+    position: relative;
+    top: 14vh;
+    left: 14vw;
+}
+
+.contact p{
+    color: white;
+    font-family: 'Stilu-SemiBold';
+
+}
+.vert_form {
+    width: 68vw;
+    height: 45vw;
+    border-radius: 100% 72% 99% 70% / 77% 79% 89% 96%;
+    background-color: rgba(0, 186, 0, 1);
+    top: 5vw;
+    left: 0vw;
+    position: absolute;
+    z-index: -10;
+}
+
+form{
+    width: 40vw;
+    position: relative;
+    top: 22vh;
+    left: 15vw;
+}
+
+input[type="text"]{
+    width: 30vw;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px dotted white;
+    font-family: 'Stilu-SemiBold';
+    font-size: 1vw;
+    color: white;
+    margin: 0 1vw 2vh 0;
+}
+
+input[type="email"]{
+    width: 30vw;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px dotted white;
+    font-family: 'Stilu-SemiBold';
+    font-size: 1vw;
+    color: white;
+    margin: 0 1vw 2vh 0;
+}
+
+::placeholder {
+    color: 2px solid white ;
+    opacity: 1;
+    font-family: 'Stilu-SemiBold';
+    font-size: 1vw;
+}
+
+button{
+    border: 2px solid white;
+    border-radius: 30% 70% 70% 30% / 30% 59% 41% 70% ;
+    width: 8vw;
+    height: 5vh;
+    padding: 0.2vw;
+    background: rgba(0, 186, 0, 1);
+    font-family: 'DuctusGeometric';
+    font-size: 1vw;
+    color: white;
+}
+button:hover{
+    border: 2px solid white;
+    border-radius: 46% 54% 46% 54% / 63% 74% 26% 37% ;
+    width: 8vw;
+    height: 5vh;
+    padding: 0.2vw;
+    background: rgba(255, 255, 255, 0.894);
+    font-family: 'DuctusGeometric';
+    font-size: 1vw;
+    color: rgba(0, 186, 0, 1);
+}
+
+.stage{
+    width: 20vw;
+    height: 12vw;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    background-color: rgba(65, 105, 225, 0.816);
+    color: white;
+    position: relative;
+    top: 15vh;
+    left: 46vw;
+    padding: 2.5vw;
+}
+.stage p{
+    font-size: calc(0.6rem + 0.6vw);
+}
+
 
 /* page projet centre bas */
 .page.projets-centre {

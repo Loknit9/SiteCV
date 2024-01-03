@@ -259,24 +259,36 @@
 
             <!-- page contact // gauche 2 -->
             <section class="page contact-left2">
-                <div>
-                    <form action="mailto:laurence.webdeveloper@mailo.com" method="get" enctype="text/plain">
-                        Subject:<br>
-                        <input type="text" name="subject" placeholder="Your Name"><br>
-                        <input type="text" id="fprenom" name="fprenom" placeholder="Polly"><br>
-                        <input type="text" id="fnom" name="fnom" placeholder="Harvey"><br>
-                        <input type="email" id="femail" name="femail" placeholder="polly@gmail.com"><br>
-                        <input type="text" id="fmessage" name="fmessage" placeholder="Bonjour, ..."><br>
-                        <input type="radio" id="robot" name="frobot" value="Je ne suis pas un robot">
-                        <input type="text" id="fname" value="John"><br><br>
-                        <input type="submit" value="envoyer">
+                <div class="contact">
+                    <h1>contact</h1>
+                    <form> 
+                        <div>
+                            <input type="text" id="fprenom" name="fprenom" required placeholder="Polly">
+                        </div>
+                        <div>
+                            <input type="text" id="fnom" name="fnom" required placeholder="Harvey">
+                        </div>
+                        <div>
+                            <input type="email" id="femail" name="femail" required placeholder="polly@gmail.com">
+                        </div>
+                        <div>
+                            <input type="text" id="fmessage" name="fmessage" placeholder="Bonjour, ...">
+                        </div>
+                        <div>
+                            <input type="radio" id="robot" name="frobot">
+                            <p>Je ne suis pas un robot</p>
+                        </div>
+
+                        <div>
+                            <button type="submit" name="envoyer">envoyer</button>
+                        </div>
                     </form>
+                    <div class="vert_form floating"></div>
                 </div>
                 <div class="stage">
                     <h2>stage</h2>
                     <p>Je suis à la recherche
-                        d'un stage comme
-                        web developpeuse full stack
+                        d'un stage comme <span>web developpeuse full stack</span>
                         du 21/04/2024
                         au 21/06/2024.</p>
                 </div>
