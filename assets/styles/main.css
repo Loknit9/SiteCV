@@ -311,7 +311,7 @@ span {
     grid-template-columns: repeat(2, 40px);
     grid-template-rows: repeat(8, 50px);
     width: 120px;
-    grid-gap: 10px 50px;
+    grid-gap: 7px 40px;
     align-items: center;
     justify-items: center;
     grid-template-areas:
@@ -324,7 +324,7 @@ span {
     "m n"
     "o p";
     position: relative;
-    top: -32vh;
+    top: -37vh;
     left: 50vw;
     z-index: 10;
 }
@@ -412,9 +412,9 @@ span {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    z-index: 10;
+    z-index: 14;
     left: 8vw;
-    top: -30vh;
+    top: -50vh;
 
 }
 
@@ -459,8 +459,8 @@ span {
     color: white;
 	font-size: 14px;
     z-index: 14;
-    left: 3.3vw;
-    top: 4.2vh;
+    left: 3.7vw;
+    top: 4.7vh;
     width: 6vw;
     text-align: center;
 }
@@ -484,7 +484,7 @@ span {
     position: relative;
     z-index: 5;
     top: 6vw;
-    left: 11vw;
+    left: 15vw;
 }
 
 .text_graphiste p {
@@ -503,7 +503,7 @@ span {
     "b"
     "c";
     position: relative;
-    top: 0vw;
+    top: -12vw;
     left: 55vw;
     z-index: 6;
 }
@@ -554,19 +554,27 @@ span {
     padding: 0 0 2vw 11vw;
 }
 #bio h1{
-    color: rgba(255, 77, 0, 0.816) 
+    color: rgba(255, 77, 0, 0.816) ;
 }
 
 .timeline h4{
-    color: rgba(255, 77, 0, 0.816) 
+    color: rgba(255, 77, 0, 0.816); 
+}
+
+.timeline h5{
+    line-height: 0.5;
+}
+
+.timeline p{
+    line-height: 0.5;
 }
 
 .timeline{
     display: grid;
-    padding: 0vw 8vw 0 11vw;
-    grid-template-columns: repeat(3, 18vw);
-    grid-gap: 5px;
-    grid-template-rows: repeat(5vh,14vh, 14vh, 14vh, 14vh);
+    padding: 0vw 4vw 0 11vw;
+    grid-template-columns: repeat(3, 19vw);
+    grid-gap: 10px;
+    grid-template-rows: repeat(5vh,13vh, 13vh, 13vh, 13vh);
     justify-items: left;
     grid-template-areas:
     "a b c" 
@@ -636,19 +644,19 @@ span {
 }
 
 .parcours{
-    width: 12vw;
-    height: 9vh;
+    width: 16vw;
+    height: 14vh;
     border-radius: 50% 30% / 50% 40%;
     border: 2px solid rgba(255, 77, 0, 0.816);
-    padding: 1.5vw;
+    padding: 0vw 1vw 0vw 2vw;
 }
 
 .formation{
-    width: 12vw;
-    height: 10vh;
+    width: 15vw;
+    height: 14vh;
     border-radius: 30% 20% / 30% 40%;
     background-color: rgba(255, 77, 0, 0.816);
-    padding: 1.4vw;
+    padding: 0vw 1vw 0vw 2vw;
     color: white;
 }
 
