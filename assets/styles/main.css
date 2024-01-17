@@ -277,7 +277,7 @@ span {
     width: 80vw;
     left: 100vw;
     margin: 0 10vw;
-    top: 6.5vh;
+    top: 9vh;
     height: 80vh;
     padding: 5vh 0;
     overflow: hidden;
@@ -285,11 +285,11 @@ span {
 }
 
 .rose_form {
-    width: 68vw;
-    height: 52vw;
+    width: 67vw;
+    height: 45vw;
     border-radius: 68% 24% 24% 62% / 33% 38% 50% 59%;
     background-color: rgba(235, 122, 221, 0.87);
-    top: -6vw;
+    top: -8vw;
     left: 0vw;
     position: absolute;
 }
@@ -413,8 +413,8 @@ span {
 	align-items: center;
 	justify-content: center;
     z-index: 14;
-    left: 8vw;
-    top: -50vh;
+    left: 0.5vw;
+    top: -70vh;
 
 }
 
@@ -459,8 +459,8 @@ span {
     color: white;
 	font-size: 14px;
     z-index: 14;
-    left: 3.7vw;
-    top: 4.7vh;
+    left: 2.5vw;
+    top: 6.5vh;
     width: 6vw;
     text-align: center;
 }
@@ -551,7 +551,7 @@ span {
 }
 
 .titre{
-    padding: 0 0 2vw 11vw;
+    padding: 0 0 1vw 11vw;
 }
 #bio h1{
     color: rgba(255, 77, 0, 0.816) ;
@@ -644,19 +644,19 @@ span {
 }
 
 .parcours{
-    width: 16vw;
-    height: 14vh;
+    width: 14vw;
+    height: 11vh;
     border-radius: 50% 30% / 50% 40%;
     border: 2px solid rgba(255, 77, 0, 0.816);
-    padding: 0vw 1vw 0vw 2vw;
+    padding: 0.7vw 1vw 0vw 3vw;
 }
 
 .formation{
     width: 15vw;
-    height: 14vh;
-    border-radius: 30% 20% / 30% 40%;
+    height: 11vh;
+    border-radius: 41% 34% 43% 31% / 32% 50% 41% 69%  ;
     background-color: rgba(255, 77, 0, 0.816);
-    padding: 0vw 1vw 0vw 2vw;
+    padding: 0.7vw 1vw 0vw 3vw;
     color: white;
 }
 
@@ -678,7 +678,7 @@ span {
     color: white;
     position: relative;
     top: 14vh;
-    left: 14vw;
+    left: 8vw;
 }
 
 .contact p{
@@ -687,11 +687,11 @@ span {
 
 }
 .vert_form {
-    width: 68vw;
-    height: 40vw;
+    width: 52vw;
+    height: 35vw;
     border-radius: 100% 72% 99% 70% / 77% 79% 89% 96%;
     background-color: rgba(0, 186, 0, 1);
-    top: 3vw;
+    top: 2vw;
     left: 0vw;
     position: absolute;
     z-index: -10;
@@ -701,7 +701,7 @@ form{
     width: 40vw;
     position: relative;
     top: 22vh;
-    left: 15vw;
+    left: 8vw;
 }
 
 input[type="text"]{
@@ -765,8 +765,8 @@ button:hover{
     background-color: rgba(65, 105, 225, 0.816);
     color: white;
     position: relative;
-    top: 15vh;
-    left: 46vw;
+    top: 3vh;
+    left: 41vw;
     padding: 2.5vw;
 }
 .stage p{
