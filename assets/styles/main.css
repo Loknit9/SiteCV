@@ -87,7 +87,6 @@ nav li:hover{
     height: 82vh;
     margin: 0 10vw;
     padding: 5vh 0;
-
 }
 
 /* page d'accueil // centre  */
@@ -688,10 +687,10 @@ span {
 }
 .vert_form {
     width: 52vw;
-    height: 35vw;
+    height: 40vw;
     border-radius: 100% 72% 99% 70% / 77% 79% 89% 96%;
     background-color: rgba(0, 186, 0, 1);
-    top: 2vw;
+    top: 4vw;
     left: 0vw;
     position: absolute;
     z-index: -10;
@@ -700,7 +699,7 @@ span {
 form{
     width: 40vw;
     position: relative;
-    top: 22vh;
+    top: 17vh;
     left: 8vw;
 }
 
@@ -733,6 +732,15 @@ input[type="email"]{
     opacity: 1;
     font-family: 'Stilu-SemiBold';
     font-size: 1vw;
+}
+textarea{
+    resize: none;
+    border: 2px dotted white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    padding: 1em;
+    margin-bottom: 2vw;
 }
 
 button{
