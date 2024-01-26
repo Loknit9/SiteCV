@@ -277,7 +277,7 @@ span {
     width: 80vw;
     left: 100vw;
     margin: 0 10vw;
-    top: 9vh;
+    top: 80px;
     height: 80vh;
     padding: 5vh 0;
     overflow: hidden;
@@ -285,8 +285,8 @@ span {
 }
 
 .rose_form {
-    width: 67vw;
-    height: 45vw;
+    width: 72vw;
+    height: 55vw;
     border-radius: 68% 24% 24% 62% / 33% 38% 50% 59%;
     background-color: rgba(235, 122, 221, 0.87);
     top: -8vw;
@@ -298,7 +298,7 @@ span {
     position: relative;
     z-index: 5;
     top: 2vw;
-    left: 13vw;
+    left: 240px;
 }
 
 .text_web p {
@@ -413,8 +413,8 @@ span {
 	align-items: center;
 	justify-content: center;
     z-index: 14;
-    left: 0.5vw;
-    top: -70vh;
+    left: -5px;
+    top: -500px;
 
 }
 
@@ -459,9 +459,9 @@ span {
     color: white;
 	font-size: 14px;
     z-index: 14;
-    left: 2.5vw;
-    top: 6.5vh;
-    width: 6vw;
+    left: 50px;
+    top: 45px;
+    width: 90px;
     text-align: center;
 }
 
