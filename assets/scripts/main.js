@@ -83,3 +83,32 @@ text.innerHTML = text.innerText
 		(char, i) => `<span style="transform:rotate(${i * 10.3}deg)">${char}</span>`
 	)
 	.join("");
+
+
+// filtre grid //
+
+$('#masonry-grid').masonry({
+    columnWidth: '.grid-sizer',
+    itemSelector: '.grid-item',
+    percentPosition: true,
+});
+
+
+// filtres par mots clé
+    $("#grid-filter li").on("click",function() {
+    let group = $(this).data('category');
+    let group_class = "." + group;
+
+    if(group == "*"){
+        $(".grid-item").show();
+        $('#masonry-grid').masonry('layout');
+    }
+    else if(group != "") {
+        $(".grid-item").hide();
+        $(group_class).show();
+        $('#masonry-grid').masonry('layout');
+    } else {
+        $(".grid-item").show();
+        $('#masonry-grid').masonry('layout');
+    }
+});
