@@ -112,3 +112,9 @@ $('#masonry-grid').masonry({
         $('#masonry-grid').masonry('layout');
     }
 });
+
+//retour à l'affichage normal avec all
+
+$("#grid-filter li[data-category='*']").on("click", function() {
+    $('#masonry-grid').masonry('layout');
+});
