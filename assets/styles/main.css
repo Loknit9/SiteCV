@@ -285,7 +285,7 @@ span {
 
 .rose_form {
     width: 72vw;
-    height: 55vw;
+    height: 52vw;
     border-radius: 68% 24% 24% 62% / 33% 38% 50% 59%;
     background-color: rgba(235, 122, 221, 0.87);
     top: -8vw;
@@ -469,7 +469,7 @@ span {
 
 .page.graphiste-right2 {
     left: 100vw;
-    top: 107vh;
+    top: 109vh;
     margin: 0vh 10vw;
     width: 80vw;
     height: 82vh;
@@ -554,6 +554,7 @@ span {
 }
 #bio h1{
     color: rgba(255, 77, 0, 0.816) ;
+    line-height: 1;
 }
 
 .timeline h4{
@@ -561,11 +562,12 @@ span {
 }
 
 .timeline h5{
-    line-height: 0.5;
+    line-height: 0.4;
 }
 
 .timeline p{
-    line-height: 0.5;
+    line-height: 0.4;
+    font-size: calc(0.4rem + 0.5vw)
 }
 
 .timeline{
@@ -661,6 +663,7 @@ span {
 
 .content p{
     line-height: 20%;
+    font-size: calc(0.4rem + 0.5vw);
 }
 
 /* page contact left bas*/
@@ -690,7 +693,7 @@ span {
     height: 40vw;
     border-radius: 100% 72% 99% 70% / 77% 79% 89% 96%;
     background-color: rgba(0, 186, 0, 1);
-    top: 4vw;
+    top: 3vw;
     left: 0vw;
     position: absolute;
     z-index: -10;
