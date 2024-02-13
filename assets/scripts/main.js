@@ -111,4 +111,14 @@ $('#masonry-grid').masonry({
         $(".grid-item").show();
         $('#masonry-grid').masonry('layout');
     }
+<<<<<<< HEAD
 });
+=======
+});
+
+//retour à l'affichage normal avec all
+
+$("#grid-filter li[data-category='*']").on("click", function() {
+    $('#masonry-grid').masonry('layout');
+});
+>>>>>>> 876ab126b52b6cde0e4a17ec7da6e9b9244b1e26
