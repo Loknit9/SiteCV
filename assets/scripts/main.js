@@ -1,4 +1,4 @@
-const center_btn = document.getElementById("home");
+const center_btn = document.querySelector(".home");
 const left_btn = document.getElementById("orange_bio");
 const left_btn2 = document.getElementById("form");
 const right_btn = document.getElementById("rose_web");
