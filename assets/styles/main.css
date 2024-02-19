@@ -160,19 +160,19 @@ span {
 }
 
 .load1{
-    animation: animateIn 1500ms ease forwards
+    animation: animateIn 2000ms ease forwards
 }
 
 .load2{
-    animation: animateIn 1000ms ease 300ms forwards
+    animation: animateIn 6000ms ease 
 }
 
 .load3{
-    animation: animateIn 1000ms ease 500ms forwards
+    animation: animateIn 10000ms ease 
 }
 
 .load4{
-    animation: animateIn 1000ms ease 700ms forwards
+    animation: animateIn 11000ms ease 
 }
 
 @keyframes animateIn
@@ -183,7 +183,7 @@ span {
     }
 
     30%{
-        opacity: 0,5;
+        opacity: 0,7;
 
     }
     
