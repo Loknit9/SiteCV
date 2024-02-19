@@ -43,7 +43,31 @@ header {
     justify-content: space-between;
 }
 
+
 .cercle {
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid rgba(0, 186, 0, 1);
+    z-index: 100;
+    position: relative;
+}
+
+.cercle:after {
+    z-index: 100;
+    position: relative;
+    content: '';
+    width: 58px;
+    height: 30px;
+    background: rgba(0, 186, 0, 1);
+    top: 30px;
+    left:-29px;
+    display: block;
+}
+
+/* .cercle {
     top: 0.7vw;
     width: 60px;
     height: 60px;
@@ -51,7 +75,7 @@ header {
     background: rgba(0, 186, 0, 1);
     z-index: 100;
     position: relative;
-}
+} */
 
 .menu_burger img{
     width: 60px;
@@ -800,6 +824,10 @@ button:hover{
     transition: transform 1s linear;
 }
 
+#masonry-grid{
+    justify-items: start;
+}
+
 
 #grid-filter {
     margin: 0;
@@ -833,7 +861,7 @@ li {
     border-radius: 20px;
     padding: 25px;
     margin: 0 30px 40px 0;
-    width:25vw;
+    width:calc(11rem + 12vw);
     float:left;
     background-color: rgba(65, 105, 225, 1);
     overflow: hidden;
@@ -880,11 +908,11 @@ li {
 }
 
 .h_1 {
-    height: 58vh;
+    height: calc(10rem + 11vw);
 }
 
 .h_2 {
-    height: 60vh;
+    height: calc(14rem + 13vw);
 }
 
 /* clearfix */
